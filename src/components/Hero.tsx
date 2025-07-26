@@ -24,8 +24,9 @@ const Hero = () => {
           </h1>
           
           <p className="text-xl md:text-2xl mb-8 text-white/90 max-w-2xl mx-auto leading-relaxed">
-            Transforming businesses with cutting-edge AI solutions. From GenAI to computer vision, 
-            we deliver intelligent systems that drive innovation.
+            Co-founded by industry veterans from UBS and humanitarian AI sectors, 
+            we transform businesses with cutting-edge artificial intelligence solutions. 
+            From GenAI to computer vision, we deliver intelligent systems that drive innovation.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
