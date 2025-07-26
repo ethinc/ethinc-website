@@ -1,0 +1,75 @@
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Brain, Eye, Cpu, Cog, Code, BarChart3 } from "lucide-react";
+
+const Services = () => {
+  const services = [
+    {
+      icon: Brain,
+      title: "Generative AI",
+      description: "Advanced LLMs, content generation, and AI-powered automation solutions tailored to your business needs.",
+    },
+    {
+      icon: Eye,
+      title: "Computer Vision",
+      description: "Object detection, image recognition, and visual analysis systems for industrial and commercial applications.",
+    },
+    {
+      icon: Cpu,
+      title: "Machine Learning",
+      description: "Custom ML models, predictive analytics, and intelligent decision-making systems for data-driven insights.",
+    },
+    {
+      icon: Cog,
+      title: "MLOps",
+      description: "End-to-end ML pipeline management, model deployment, and production monitoring for scalable AI solutions.",
+    },
+    {
+      icon: Code,
+      title: "Software Engineering",
+      description: "Full-stack development, system architecture, and technical consulting for robust software solutions.",
+    },
+    {
+      icon: BarChart3,
+      title: "AI Strategy",
+      description: "Strategic AI implementation planning, technology assessment, and digital transformation guidance.",
+    },
+  ];
+
+  return (
+    <section id="services" className="py-20 bg-background">
+      <div className="container mx-auto px-4">
+        <div className="text-center mb-16">
+          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
+            Our <span className="bg-gradient-primary bg-clip-text text-transparent">Services</span>
+          </h2>
+          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+            Comprehensive AI solutions from research to production, helping businesses leverage 
+            cutting-edge technology for competitive advantage.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {services.map((service, index) => (
+            <Card key={index} className="group hover:shadow-elegant transition-all duration-300 hover:-translate-y-2 border-border">
+              <CardHeader>
+                <div className="w-12 h-12 bg-gradient-primary rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                  <service.icon className="w-6 h-6 text-white" />
+                </div>
+                <CardTitle className="text-xl font-semibold text-foreground">
+                  {service.title}
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <CardDescription className="text-muted-foreground leading-relaxed">
+                  {service.description}
+                </CardDescription>
+              </CardContent>
+            </Card>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Services;
