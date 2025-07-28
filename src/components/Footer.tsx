@@ -60,9 +60,6 @@ const Footer = () => {
                 <span>Lausanne, CH</span>
               </div>
             </div>
-            <Button variant="accent" size="sm" className="mt-4">
-              Get In Touch
-            </Button>
           </div>
         </div>
 
