@@ -130,6 +130,7 @@ const ContactForm = ({ trigger }: ContactFormProps) => {
               onChange={handleInputChange}
               placeholder="Tell us about your project or specific requirements..."
               rows={4}
+              required
             />
           </div>
 

@@ -103,18 +103,6 @@ const CVForm = ({ trigger }: CVFormProps) => {
               />
             </div>
           </div>
-          
-          <div className="grid grid-cols-2 gap-4">
-            <div className="space-y-2">
-              <Label htmlFor="company">Company</Label>
-              <Input
-                id="company"
-                name="company"
-                value={formData.company}
-                onChange={handleInputChange}
-                placeholder="Your company"
-              />
-            </div>
             <div className="space-y-2">
               <Label htmlFor="phone">Phone</Label>
               <Input
