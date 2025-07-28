@@ -1,6 +1,7 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Monitor, Shield, Calendar, ArrowRight } from "lucide-react";
+import ContactForm from "./ContactForm";
 
 const Products = () => {
   const products = [
@@ -79,10 +80,14 @@ const Products = () => {
                 </div>
 
                 <div className="flex gap-3 pt-4">
-                  <Button variant="hero" className="flex-1">
-                    <Calendar className="w-4 h-4 mr-2" />
-                    Book Demo
-                  </Button>
+                  <ContactForm
+                    trigger={
+                      <Button variant="hero" className="flex-1">
+                        <Calendar className="w-4 h-4 mr-2" />
+                        Book Demo
+                      </Button>
+                    }
+                  />
                   <Button variant="outline" className="flex-1">
                     Learn More
                   </Button>
@@ -102,11 +107,15 @@ const Products = () => {
               Schedule a personalized demo of our products and see how Ethinc's AI solutions 
               can revolutionize your operations.
             </p>
-            <Button variant="glass" size="xl" className="group">
-              <Calendar className="w-5 h-5 mr-2" />
-              Schedule Demo Call
-              <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
-            </Button>
+            <ContactForm
+              trigger={
+                <Button variant="glass" size="xl" className="group">
+                  <Calendar className="w-5 h-5 mr-2" />
+                  Schedule Demo Call
+                  <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
+                </Button>
+              }
+            />
           </div>
         </div>
       </div>

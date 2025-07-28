@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
+import ContactForm from "./ContactForm";
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -28,9 +29,13 @@ const Navigation = () => {
             <a href="#contact" className="text-white/90 hover:text-white transition-colors">
               Contact
             </a>
-            <Button variant="hero" size="sm">
-              Book Demo
-            </Button>
+            <ContactForm
+              trigger={
+                <Button variant="hero" size="sm">
+                  Book Demo
+                </Button>
+              }
+            />
           </div>
 
           {/* Mobile Menu Button */}
@@ -58,9 +63,13 @@ const Navigation = () => {
               <a href="#contact" className="text-white/90 hover:text-white transition-colors py-2">
                 Contact
               </a>
-              <Button variant="hero" size="sm" className="w-fit">
-                Book Demo
-              </Button>
+              <ContactForm
+                trigger={
+                  <Button variant="hero" size="sm" className="w-fit">
+                    Book Demo
+                  </Button>
+                }
+              />
             </div>
           </div>
         )}
