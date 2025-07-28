@@ -1,6 +1,7 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Monitor, Shield, Calendar, ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
 import ContactForm from "./ContactForm";
 
 const Products = () => {
@@ -17,7 +18,8 @@ const Products = () => {
         "Comprehensive reporting dashboard",
         "Trend identification and prediction"
       ],
-      gradient: "bg-gradient-primary"
+      gradient: "bg-gradient-primary",
+      link: "/vibemonitor"
     },
     {
       icon: Shield,
@@ -31,7 +33,8 @@ const Products = () => {
         "Enterprise-grade scalability",
         "Zero data leakage guarantee"
       ],
-      gradient: "bg-gradient-accent"
+      gradient: "bg-gradient-accent",
+      link: "/prism"
     }
   ];
 
@@ -88,9 +91,11 @@ const Products = () => {
                       </Button>
                     }
                   />
-                  <Button variant="outline" className="flex-1">
-                    Learn More
-                  </Button>
+                  <Link to={product.link} className="flex-1">
+                    <Button variant="outline" className="w-full">
+                      Learn More
+                    </Button>
+                  </Link>
                 </div>
               </CardContent>
             </Card>

@@ -5,6 +5,8 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
+import VibeMonitor from "./pages/VibeMonitor";
+import PRISM from "./pages/PRISM";
 
 const queryClient = new QueryClient();
 
@@ -16,6 +18,8 @@ const App: React.FC = () => {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />
+          <Route path="/vibemonitor" element={<VibeMonitor />} />
+          <Route path="/prism" element={<PRISM />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
