@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Linkedin, ExternalLink } from "lucide-react";
+import CVForm from "./CVForm";
 
 const About = () => {
   return (
@@ -85,9 +86,13 @@ const About = () => {
           <p className="text-lg text-muted-foreground mb-8">
             Together, we combine deep technical expertise with a mission to democratize AI and create meaningful impact.
           </p>
-          <Button size="lg" className="bg-gradient-primary hover:opacity-90">
-            Join Our Mission
-          </Button>
+          <CVForm
+            trigger={
+              <Button size="lg" className="bg-gradient-primary hover:opacity-90">
+                Join Our Mission
+              </Button>
+            }
+          />
         </div>
       </div>
     </section>
