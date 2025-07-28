@@ -8,7 +8,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           {/* Company Info */}
           <div className="space-y-4">
-            <h3 className="text-2xl font-bold">Ethnic</h3>
+            <h3 className="text-2xl font-bold">Ethinc</h3>
             <p className="text-muted-foreground leading-relaxed">
               Transforming businesses with cutting-edge AI solutions. 
               From GenAI to computer vision, we deliver intelligent systems that drive innovation.
@@ -49,7 +49,7 @@ const Footer = () => {
             <div className="space-y-3 text-muted-foreground">
               <div className="flex items-center gap-3">
                 <Mail className="w-4 h-4" />
-                <span>contact@ethnic.ai</span>
+                <span>contact@ethinc.ch</span>
               </div>
               <div className="flex items-center gap-3">
                 <Phone className="w-4 h-4" />
@@ -57,7 +57,7 @@ const Footer = () => {
               </div>
               <div className="flex items-center gap-3">
                 <MapPin className="w-4 h-4" />
-                <span>San Francisco, CA</span>
+                <span>Lausanne, CH</span>
               </div>
             </div>
             <Button variant="accent" size="sm" className="mt-4">
@@ -68,7 +68,7 @@ const Footer = () => {
 
         {/* Bottom Bar */}
         <div className="border-t border-border pt-8 flex flex-col md:flex-row justify-between items-center text-muted-foreground">
-          <p>&copy; 2024 Ethnic. All rights reserved.</p>
+          <p>&copy; 2025 Ethinc. All rights reserved.</p>
           <div className="flex space-x-6 mt-4 md:mt-0">
             <a href="#" className="hover:text-foreground transition-colors">Privacy Policy</a>
             <a href="#" className="hover:text-foreground transition-colors">Terms of Service</a>

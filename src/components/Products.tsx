@@ -99,7 +99,7 @@ const Products = () => {
               Ready to Transform Your Business?
             </h3>
             <p className="text-xl mb-6 text-white/90">
-              Schedule a personalized demo of our products and see how Ethnic's AI solutions 
+              Schedule a personalized demo of our products and see how Ethinc's AI solutions 
               can revolutionize your operations.
             </p>
             <Button variant="glass" size="xl" className="group">

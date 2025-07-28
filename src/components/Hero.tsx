@@ -19,12 +19,12 @@ const Hero = () => {
           <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
             Welcome to{" "}
             <span className="bg-gradient-accent bg-clip-text text-transparent">
-              Ethnic
+              EthiNc
             </span>
           </h1>
           
           <p className="text-xl md:text-2xl mb-8 text-white/90 max-w-2xl mx-auto leading-relaxed">
-            Co-founded by industry veterans from UBS and humanitarian AI sectors, 
+            Co-founded by industry veterans from banking and humanitarian AI sectors, 
             we transform businesses with cutting-edge artificial intelligence solutions. 
             From GenAI to computer vision, we deliver intelligent systems that drive innovation.
           </p>
