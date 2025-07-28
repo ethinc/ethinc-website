@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
+import { useToast } from "@/hooks/use-toast";
 import {
   Dialog,
   DialogContent,
@@ -18,6 +19,7 @@ interface ContactFormProps {
 
 const ContactForm = ({ trigger }: ContactFormProps) => {
   const [isOpen, setIsOpen] = useState(false);
+  const { toast } = useToast();
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -38,6 +40,13 @@ const ContactForm = ({ trigger }: ContactFormProps) => {
     e.preventDefault();
     // User will handle the sending logic
     console.log("Form submitted:", formData);
+    
+    // Show toast confirmation
+    toast({
+      title: "Message sent!",
+      description: "Thank you for your interest. We'll get back to you soon.",
+    });
+    
     // Reset form and close dialog
     setFormData({
       name: "",
