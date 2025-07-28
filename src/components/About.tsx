@@ -33,7 +33,7 @@ const About = () => {
                   </p>
                   <Button variant="outline" size="sm" asChild>
                     <a 
-                      href="https://linkedin.com/in/nizar-ghandri" 
+                      href="https://www.linkedin.com/in/nizar-ghandri-232b71174/" 
                       target="_blank" 
                       rel="noopener noreferrer"
                       className="flex items-center gap-2"
@@ -63,9 +63,18 @@ const About = () => {
                     Passionate about leveraging artificial intelligence to solve complex 
                     social challenges and create positive global impact.
                   </p>
-                  <div className="flex items-center gap-2 text-muted-foreground">
-                    <span className="text-sm">Humanitarian AI Expert</span>
-                  </div>
+                  <Button variant="outline" size="sm" asChild>
+                    <a 
+                      href="https://www.linkedin.com/in/selim-fekih-a37521181/" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2"
+                    >
+                      <Linkedin className="w-4 h-4" />
+                      LinkedIn
+                      <ExternalLink className="w-3 h-3" />
+                    </a>
+                  </Button>
                 </div>
               </div>
             </CardContent>
