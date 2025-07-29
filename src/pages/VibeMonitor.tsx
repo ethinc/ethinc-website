@@ -1,4 +1,4 @@
-import { ArrowLeft, Monitor, CheckCircle, BarChart3, Users, Globe, Shield, EyeOff } from "lucide-react";
+import { ArrowLeft, Monitor, CheckCircle, BarChart3, Users, Globe, Shield } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -12,7 +12,7 @@ const VibeMonitor = () => {
     {
       icon: Users,
       title: "Sentiment Analysis",
-      description: "Gain deep insight into the most influential posts shaping any topic, and track the evolution of the trends they drive. Discover how different audience clusters contribute to the conversation — what narratives they promote, how they shift over time — all delivered with clear, AI-powered summaries of each key development."
+      description: "Gain deep insight into influential posts shaping any topic and track trend evolution. See how audience clusters contribute, what narratives they promote, and how these shift over time—all with clear AI-powered summaries of key developments and embeddings for quantitative analysis"
     },
     {
       icon: BarChart3,
@@ -22,17 +22,12 @@ const VibeMonitor = () => {
     {
       icon: Globe,
       title: "Multi-Platform Monitoring",
-      description: "Comprehensively monitor public sentiment across Reddit, Twitter, LinkedIn, and more — in any language. Our multilingual AI analyzes text, audio, video, and images to uncover the most influential posts, track trend evolution, and identify the clusters of people shaping each narrative. Get concise, AI-powered summaries of every key development for any topic you care about."
+      description: "Comprehensively monitor public sentiment across Reddit, Twitter, LinkedIn, and more — in any language. Our multilingual AI analyzes text, audio, video, and images to uncover the most influential posts, track trend evolution, and identify the clusters of people shaping each narrative."
     },
     {
       icon: Shield,
       title: "Real-time Insights",
       description: "Lightining fast insights into public sentiment and trends. Our AI processes vast amounts of data in real-time, ensuring you never miss a critical development."
-    },
-    {
-      icon: EyeOff,
-      title: "Privacy-First Approach",
-      description: "We prioritize your privacy. VibeMonitor operates with a privacy-first approach, ensuring that your data is secure and confidential while providing you with the insights you need."
     }
   ];
 
@@ -148,8 +143,7 @@ const VibeMonitor = () => {
               <div className="bg-gradient-hero rounded-2xl p-8 text-white">
                 <h3 className="text-2xl font-bold mb-4">Ready to Get Started?</h3>
                 <p className="text-white/90 mb-6">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-                  tempor incididunt ut labore et dolore magna aliqua.
+                  Contact us today to learn how VibeMonitor can transform your social media monitoring and public sentiment analysis.
                 </p>
                 <ContactForm
                   trigger={
