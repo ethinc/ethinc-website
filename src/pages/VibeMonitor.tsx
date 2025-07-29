@@ -7,6 +7,8 @@ import { Link } from "react-router-dom";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import ContactForm from "@/components/ContactForm";
+import DemoVideo from "@/assets/demo.mp4";
+import PosterImage from "@/assets/hero-bg.jpg";
 
 const VibeMonitor = () => {
   const features = [
@@ -89,9 +91,9 @@ const VibeMonitor = () => {
                     <video 
                       controls 
                       className="w-full h-full rounded-lg"
-                      poster="/assets/hero-bg.jpg"
+                      poster={PosterImage}
                     >
-                      <source src="/assets/demo.mp4" type="video/mp4" />
+                      <source src={DemoVideo} type="video/mp4" />
                       Your browser does not support the video tag.
                     </video>
                   </div>

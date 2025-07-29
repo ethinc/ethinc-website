@@ -17,14 +17,14 @@ const Navigation = () => {
 
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center space-x-8">
-            <a href="#about" className="text-white/90 hover:text-white transition-colors">
-              About
-            </a>
             <a href="#services" className="text-white/90 hover:text-white transition-colors">
               Services
             </a>
             <a href="#products" className="text-white/90 hover:text-white transition-colors">
               Products
+            </a>
+            <a href="#about" className="text-white/90 hover:text-white transition-colors">
+              About
             </a>
             <a href="#contact" className="text-white/90 hover:text-white transition-colors">
               Contact
