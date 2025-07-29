@@ -1,52 +1,55 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Brain, Eye, Cpu, Cog, Code, BarChart3, Database, ShieldCheck } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 const Services = () => {
+  const { t } = useTranslation();
+  
   const services = [
     {
       icon: Brain,
-      title: "Natural Language Processing (NLP)",
-      description: "Expertise in text classification, named entity recognition (NER), sentiment analysis, information extraction, and language understanding for multilingual and domain-specific applications.",
+      title: t('services.nlp.title'),
+      description: t('services.nlp.description'),
     },
     {
       icon: Brain,
-      title: "Generative AI",
-      description: "Advanced LLMs, content generation, prompt engineering, model adaptation and deployment, finetuning for your data, and privacy-focused solutions including on-premise and secure deployments.",
+      title: t('services.generativeAI.title'),
+      description: t('services.generativeAI.description'),
     },
     {
       icon: Eye,
-      title: "Computer Vision",
-      description: "Object detection, image recognition, visual analysis, and custom model finetuning for your specific industrial or commercial use cases.",
+      title: t('services.computerVision.title'),
+      description: t('services.computerVision.description'),
     },
     {
       icon: Cog,
-      title: "MLOps & Privacy",
-      description: "End-to-end ML pipeline management, privacy-preserving model deployment, monitoring, and scalable infrastructure for secure and reliable AI operations.",
+      title: t('services.mlops.title'),
+      description: t('services.mlops.description'),
     },
     {
       icon: Code,
-      title: "Software Engineering",
-      description: "Full-stack development, system architecture, and technical consulting for robust, scalable, and maintainable software solutions.",
+      title: t('services.softwareEngineering.title'),
+      description: t('services.softwareEngineering.description'),
     },
     {
       icon: Database,
-      title: "Data Engineering & Architecture",
-      description: "Design and implementation of scalable data pipelines, real-time processing, data lakes/warehouses, and architecture optimized for ML and analytics workflows.",
+      title: t('services.dataEngineering.title'),
+      description: t('services.dataEngineering.description'),
     },
     {
       icon: BarChart3,
-      title: "AI Strategy & Roadmapping",
-      description: "AI opportunity assessment, technology selection, responsible AI governance, and actionable roadmaps for digital transformation and business impact.",
+      title: t('services.aiStrategy.title'),
+      description: t('services.aiStrategy.description'),
     },
     {
       icon: BarChart3,
-      title: "Enterprise AI Integration & Enablement",
-      description: "Seamless integration of AI systems into enterprise workflows, AI-powered analysis generation, user training, and ongoing support to maximize adoption and value.",
+      title: t('services.enterpriseAI.title'),
+      description: t('services.enterpriseAI.description'),
     },
     {
       icon: ShieldCheck,
-      title: "AI Governance & Compliance",
-      description: "Establishing frameworks for responsible AI use, regulatory alignment (e.g., GDPR, AI Act), risk assessment, auditability, and internal policy development for enterprise-scale deployments.",
+      title: t('services.aiGovernance.title'),
+      description: t('services.aiGovernance.description'),
     }
   ];
 
@@ -55,10 +58,10 @@ const Services = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-            Our <span className="bg-gradient-primary bg-clip-text text-transparent">Services</span>
+            {t('services.title')}
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            AI, GenAI, and computer vision solutions for your business, delivered by EPFL alumni and industry experts. From research to production, we help you unlock value and drive innovation with advanced, privacy-focused technology.
+            {t('services.subtitle')}
           </p>
         </div>
 

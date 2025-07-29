@@ -1,18 +1,21 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Linkedin, ExternalLink } from "lucide-react";
+import { useTranslation } from "react-i18next";
 import CVForm from "./CVForm";
 
 const About = () => {
+  const { t } = useTranslation();
+  
   return (
     <section id="about" className="py-24 bg-background">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-primary bg-clip-text text-transparent">
-            Our Team
+            {t('about.title')}
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            A team of tech experts with extensive experience in consulting and product development, delivering innovative solutions across diverse industries.
+            {t('about.subtitle')}
           </p>
         </div>
 

@@ -1,0 +1,125 @@
+{
+  "navigation": {
+    "services": "Services",
+    "products": "Products",
+    "about": "About",
+    "contact": "Contact",
+    "contactUs": "Contact Us"
+  },
+  "hero": {
+    "title": "AI solutions for real-world applications",
+    "subtitle": "We specialize in cutting-edge artificial intelligence solutions, from natural language processing to computer vision, helping businesses transform their operations and unlock new possibilities.",
+    "cta": "Get Started",
+    "learnMore": "Learn More"
+  },
+  "services": {
+    "title": "Our Services",
+    "subtitle": "AI, GenAI, and computer vision solutions for your business, delivered by EPFL alumni and industry experts. From research to production, we help you unlock value and drive innovation with advanced, privacy-focused technology.",
+    "nlp": {
+      "title": "Natural Language Processing (NLP)",
+      "description": "Expertise in text classification, named entity recognition (NER), sentiment analysis, information extraction, and language understanding for multilingual and domain-specific applications."
+    },
+    "generativeAI": {
+      "title": "Generative AI",
+      "description": "Advanced LLMs, content generation, prompt engineering, model adaptation and deployment, finetuning for your data, and privacy-focused solutions including on-premise and secure deployments."
+    },
+    "computerVision": {
+      "title": "Computer Vision",
+      "description": "Object detection, image recognition, visual analysis, and custom model finetuning for your specific industrial or commercial use cases."
+    },
+    "mlops": {
+      "title": "MLOps & Privacy",
+      "description": "End-to-end ML pipeline management, privacy-preserving model deployment, monitoring, and scalable infrastructure for secure and reliable AI operations."
+    },
+    "softwareEngineering": {
+      "title": "Software Engineering",
+      "description": "Full-stack development, system architecture, and technical consulting for robust, scalable, and maintainable software solutions."
+    },
+    "dataEngineering": {
+      "title": "Data Engineering & Architecture",
+      "description": "Design and implementation of scalable data pipelines, real-time processing, data lakes/warehouses, and architecture optimized for ML and analytics workflows."
+    },
+    "aiStrategy": {
+      "title": "AI Strategy & Roadmapping",
+      "description": "AI opportunity assessment, technology selection, responsible AI governance, and actionable roadmaps for digital transformation and business impact."
+    },
+    "enterpriseAI": {
+      "title": "Enterprise AI Integration & Enablement",
+      "description": "Seamless integration of AI systems into enterprise workflows, AI-powered analysis generation, user training, and ongoing support to maximize adoption and value."
+    },
+    "aiGovernance": {
+      "title": "AI Governance & Compliance",
+      "description": "Establishing frameworks for responsible AI use, regulatory alignment (e.g., GDPR, AI Act), risk assessment, auditability, and internal policy development for enterprise-scale deployments."
+    }
+  },
+  "products": {
+    "title": "Our Products",
+    "subtitle": "Cutting-edge AI products designed to transform how businesses understand and interact with data while maintaining the highest standards of privacy.",
+    "vibeMonitor": {
+      "title": "VibeMonitor",
+      "subtitle": "Social Media Intelligence",
+      "description": "Advanced report generation from social media platforms including Reddit, Twitter, and LinkedIn. Our AI understands and analyzes videos, audio, text, and images to provide comprehensive insights into public sentiment and trends.",
+      "features": [
+        "Multi-platform social media monitoring",
+        "Multimedia content analysis (video, audio, text, images)",
+        "Real-time sentiment tracking",
+        "Comprehensive reporting dashboard",
+        "Trend identification and prediction"
+      ]
+    },
+    "prism": {
+      "title": "PRISM",
+      "subtitle": "Privacy-Respecting Retrieval & Information Synthesis Machine",
+      "description": "A fully local, privacy-first AI platform that analyzes and summarizes diverse document types, supports multilingual processing, and provides verifiable, exportable insights—all while ensuring complete data control.",
+      "features": [
+        "Supports text, media, emails, and multilingual content",
+        "Extracts metadata and structured data from documents",
+        "Answers include sources and confidence scores",
+        "Customizable roles, permissions, and interface",
+        "Runs locally or in private cloud, with fine-tuning options"
+      ]
+    },
+    "keyFeatures": "Key Features:",
+    "learnMore": "Learn More"
+  },
+  "about": {
+    "title": "Our Team",
+    "subtitle": "A team of tech experts with extensive experience in consulting and product development, delivering innovative solutions across diverse industries.",
+    "description": "At Ethinc, we believe in the transformative power of artificial intelligence. Our team of experts combines deep technical knowledge with practical business understanding to deliver AI solutions that drive real results.",
+    "mission": "Our mission is to democratize AI technology and make it accessible to businesses of all sizes.",
+    "values": {
+      "innovation": "Innovation",
+      "excellence": "Excellence",
+      "collaboration": "Collaboration",
+      "integrity": "Integrity"
+    }
+  },
+  "footer": {
+    "services": "Services",
+    "products": "Products",
+    "contact": "Contact",
+    "location": "Lausanne, Vaud CH",
+    "email": "contact@ethinc.ch",
+    "copyright": "© 2025 Ethinc. All rights reserved.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "cookies": "Cookie Policy"
+  },
+  "contact": {
+    "title": "Get in Touch",
+    "subtitle": "Ready to transform your business with AI? Let's talk.",
+    "name": "Name",
+    "email": "Email",
+    "company": "Company",
+    "phone": "Phone",
+    "message": "Message",
+    "send": "Send Message",
+    "sending": "Sending...",
+    "success": "Message sent successfully!",
+    "error": "Error sending message. Please try again."
+  },
+  "language": {
+    "en": "English",
+    "fr": "Français"
+  }
+} 

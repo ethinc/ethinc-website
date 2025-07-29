@@ -2,22 +2,19 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Button } from "@/components/ui/button";
 import { Monitor, Shield, Calendar, ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 import ContactForm from "./ContactForm";
 
 const Products = () => {
+  const { t } = useTranslation();
+  
   const products = [
     {
       icon: Monitor,
-      title: "VibeMonitor",
-      subtitle: "Social Media Intelligence",
-      description: "Advanced report generation from social media platforms including Reddit, Twitter, and LinkedIn. Our AI understands and analyzes videos, audio, text, and images to provide comprehensive insights into public sentiment and trends.",
-      features: [
-        "Multi-platform social media monitoring",
-        "Multimedia content analysis (video, audio, text, images)",
-        "Real-time sentiment tracking",
-        "Comprehensive reporting dashboard",
-        "Trend identification and prediction"
-      ],
+      title: t('products.vibeMonitor.title'),
+      subtitle: t('products.vibeMonitor.subtitle'),
+      description: t('products.vibeMonitor.description'),
+      features: t('products.vibeMonitor.features', { returnObjects: true }),
       gradient: "bg-gradient-primary",
       link: "/vibemonitor"
     },
@@ -29,16 +26,10 @@ const Products = () => {
           className="w-17 h-17 object-contain"
         />
       ),
-      title: "PRISM",
-      subtitle: "Privacy-Respecting Retrieval & Information Synthesis Machine",
-      description: "A fully local, privacy-first AI platform that analyzes and summarizes diverse document types, supports multilingual processing, and provides verifiable, exportable insights—all while ensuring complete data control.",
-      features: [
-        "Supports text, media, emails, and multilingual content",
-        "Extracts metadata and structured data from documents",
-        "Answers include sources and confidence scores",
-        "Customizable roles, permissions, and interface",
-        "Runs locally or in private cloud, with fine-tuning options",
-      ],
+      title: t('products.prism.title'),
+      subtitle: t('products.prism.subtitle'),
+      description: t('products.prism.description'),
+      features: t('products.prism.features', { returnObjects: true }),
       gradient: "bg-gradient-accent",
       link: "/prism"
     }
@@ -49,11 +40,10 @@ const Products = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-            Our <span className="bg-gradient-accent bg-clip-text text-transparent">Products</span>
+            {t('products.title')}
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Cutting-edge AI products designed to transform how businesses understand 
-            and interact with data while maintaining the highest standards of privacy.
+            {t('products.subtitle')}
           </p>
         </div>
 
@@ -77,9 +67,9 @@ const Products = () => {
                 </p>
                 
                 <div className="space-y-2">
-                  <h4 className="font-semibold text-foreground mb-3">Key Features:</h4>
+                  <h4 className="font-semibold text-foreground mb-3">{t('products.keyFeatures')}</h4>
                   <ul className="space-y-2">
-                    {product.features.map((feature, featureIndex) => (
+                    {(product.features as string[]).map((feature, featureIndex) => (
                       <li key={featureIndex} className="flex items-start gap-2 text-muted-foreground">
                         <ArrowRight className="w-4 h-4 text-accent mt-0.5 flex-shrink-0" />
                         {feature}
@@ -99,7 +89,7 @@ const Products = () => {
                   /> */}
                   <Link to={product.link} className="flex-1">
                     <Button variant="outline" className="w-full">
-                      Learn More
+                      {t('products.learnMore')}
                     </Button>
                   </Link>
                 </div>
