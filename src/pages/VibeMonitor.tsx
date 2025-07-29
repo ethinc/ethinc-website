@@ -1,4 +1,4 @@
-import { ArrowLeft, Monitor, CheckCircle, BarChart3, Users, Globe, Shield } from "lucide-react";
+import { ArrowLeft, Monitor, CheckCircle, BarChart3, Users, Globe, Shield, EyeOff } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -10,33 +10,39 @@ import ContactForm from "@/components/ContactForm";
 const VibeMonitor = () => {
   const features = [
     {
-      icon: BarChart3,
-      title: "Advanced Analytics",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    },
-    {
       icon: Users,
       title: "Sentiment Analysis",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      description: "Gain deep insight into the most influential posts shaping any topic, and track the evolution of the trends they drive. Discover how different audience clusters contribute to the conversation — what narratives they promote, how they shift over time — all delivered with clear, AI-powered summaries of each key development."
+    },
+    {
+      icon: BarChart3,
+      title: "Advanced Analytics",
+      description: "Gain deep insights into social media trends with advanced analytics. Our AI-powered platform provides real-time data visualization and trend analysis to help you make informed decisions."
     },
     {
       icon: Globe,
       title: "Multi-Platform Monitoring",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      description: "Comprehensively monitor public sentiment across Reddit, Twitter, LinkedIn, and more — in any language. Our multilingual AI analyzes text, audio, video, and images to uncover the most influential posts, track trend evolution, and identify the clusters of people shaping each narrative. Get concise, AI-powered summaries of every key development for any topic you care about."
     },
     {
       icon: Shield,
       title: "Real-time Insights",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      description: "Lightining fast insights into public sentiment and trends. Our AI processes vast amounts of data in real-time, ensuring you never miss a critical development."
+    },
+    {
+      icon: EyeOff,
+      title: "Privacy-First Approach",
+      description: "We prioritize your privacy. VibeMonitor operates with a privacy-first approach, ensuring that your data is secure and confidential while providing you with the insights you need."
     }
   ];
 
   const benefits = [
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-    "Sed do eiusmod tempor incididunt ut labore et dolore",
-    "Ut enim ad minim veniam, quis nostrud exercitation",
-    "Duis aute irure dolor in reprehenderit in voluptate",
-    "Excepteur sint occaecat cupidatat non proident"
+    "State-of-the-art comprehensive social media monitoring",
+    "Real-time sentiment tracking",
+    "Multilingual and multimodal analysis (text, audio, video, images)",
+    "Privacy and security at the core",
+    "Competitive pricing with no hidden fees",
+    "Dedicated support and continuous updates",
   ];
 
   return (
@@ -65,9 +71,7 @@ const VibeMonitor = () => {
               VibeMonitor
             </h1>
             <p className="text-xl text-white/90 mb-8 max-w-2xl leading-relaxed">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-              incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis 
-              nostrud exercitation ullamco laboris.
+              Advanced report generation from social media platforms including Reddit, Twitter, and LinkedIn. Our GenAI tool understands and analyzes videos, audio, text, and images to provide comprehensive insights into public sentiment and trends.
             </p>
             
             <div className="flex gap-4">
@@ -94,8 +98,7 @@ const VibeMonitor = () => {
               Powerful <span className="bg-gradient-accent bg-clip-text text-transparent">Features</span>
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-              tempor incididunt ut labore et dolore magna aliqua.
+              VibeMonitor offers a suite of powerful features designed to give you deep insights into social media trends and public sentiment.
             </p>
           </div>
 
@@ -129,9 +132,7 @@ const VibeMonitor = () => {
                   Why Choose VibeMonitor?
                 </h2>
                 <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  VibeMonitor delivers unmatched insights into social media trends and public sentiment. Harness advanced AI for real-time, actionable data—supported by robust privacy, security, competitive pricing, and a dedication to quality.
                 </p>
                 
                 <div className="space-y-4">
