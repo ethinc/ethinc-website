@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
 import { ArrowRight, Play } from "lucide-react";
 import heroImage from "@/assets/hero-bg.jpg";
 
@@ -36,6 +37,26 @@ const Hero = () => {
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </Button>
             </a>
+            <Dialog>
+              <DialogTrigger asChild>
+                <Button variant="glass" size="xl" className="group">
+                  <Play className="w-5 h-5 mr-2" />
+                  Watch Demo
+                </Button>
+              </DialogTrigger>
+              <DialogContent className="max-w-4xl w-full p-0">
+                <div className="aspect-video">
+                  <video 
+                    controls 
+                    className="w-full h-full rounded-lg"
+                    poster="/assets/video-poster.jpg"
+                  >
+                    <source src="/assets/demo-video.mp4" type="video/mp4" />
+                    Your browser does not support the video tag.
+                  </video>
+                </div>
+              </DialogContent>
+            </Dialog>
           </div>
 
           {/* Stats */}
