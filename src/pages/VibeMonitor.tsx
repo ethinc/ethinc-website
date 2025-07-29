@@ -1,6 +1,7 @@
 import { ArrowLeft, Monitor, CheckCircle, BarChart3, Users, Globe, Shield } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
 import { Badge } from "@/components/ui/badge";
 import { Link } from "react-router-dom";
 import Navigation from "@/components/Navigation";
@@ -77,9 +78,26 @@ const VibeMonitor = () => {
                   </Button>
                 }
               />
-              <Button variant="outline" size="xl" className="border-white/30 text-white hover:bg-white/10">
-                Watch Demo
-              </Button>
+              <Dialog>
+                <DialogTrigger asChild>
+                  <Button variant="outline" size="xl" className="border-white/30 text-white hover:bg-white/10">
+                  Watch Demo
+                  </Button>
+                </DialogTrigger>
+                <DialogContent className="max-w-4xl w-full p-0">
+                  <div className="aspect-video">
+                    <video 
+                      controls 
+                      className="w-full h-full rounded-lg"
+                      poster="/assets/hero-bg.jpg"
+                    >
+                      <source src="/assets/demo.mp4" type="video/mp4" />
+                      Your browser does not support the video tag.
+                    </video>
+                  </div>
+                </DialogContent>
+            </Dialog>
+              
             </div>
           </div>
         </div>
