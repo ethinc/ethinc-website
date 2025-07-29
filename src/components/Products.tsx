@@ -22,16 +22,22 @@ const Products = () => {
       link: "/vibemonitor"
     },
     {
-      icon: Shield,
+      icon: () => (
+        <img
+          src="src/assets/prism.png"
+          alt="PRISM"
+          className="w-17 h-17 object-contain"
+        />
+      ),
       title: "PRISM",
-      subtitle: "Privacy-Respecting RAG Pipeline",
-      description: "Privacy-Respecting Retrieval & Information Synthesis Machine - a specialized RAG pipeline with personal retrieval algorithm that's fully local, private, and scalable for enterprise needs.",
+      subtitle: "Privacy-Respecting Retrieval & Information Synthesis Machine",
+      description: "A fully local, privacy-first AI platform that analyzes and summarizes diverse document types, supports multilingual processing, and provides verifiable, exportable insights—all while ensuring complete data control.",
       features: [
-        "100% local and private processing",
-        "Specialized RAG architecture",
-        "Personal retrieval algorithm",
-        "Enterprise-grade scalability",
-        "Zero data leakage guarantee"
+        "Supports text, media, emails, and multilingual content",
+        "Extracts metadata and structured data from documents",
+        "Answers include sources and confidence scores",
+        "Customizable roles, permissions, and interface",
+        "Runs locally or in private cloud, with fine-tuning options",
       ],
       gradient: "bg-gradient-accent",
       link: "/prism"
@@ -83,14 +89,14 @@ const Products = () => {
                 </div>
 
                 <div className="flex gap-3 pt-4">
-                  <ContactForm
+                  {/* <ContactForm
                     trigger={
                       <Button variant="hero" className="flex-1">
                         <Calendar className="w-4 h-4 mr-2" />
                         Book Demo
                       </Button>
                     }
-                  />
+                  /> */}
                   <Link to={product.link} className="flex-1">
                     <Button variant="outline" className="w-full">
                       Learn More
@@ -100,28 +106,6 @@ const Products = () => {
               </CardContent>
             </Card>
           ))}
-        </div>
-
-        {/* CTA Section */}
-        <div className="text-center mt-16">
-          <div className="bg-gradient-hero rounded-2xl p-8 text-white max-w-4xl mx-auto">
-            <h3 className="text-3xl font-bold mb-4">
-              Ready to Transform Your Business?
-            </h3>
-            <p className="text-xl mb-6 text-white/90">
-              Schedule a personalized demo of our products and see how Ethinc's AI solutions 
-              can revolutionize your operations.
-            </p>
-            <ContactForm
-              trigger={
-                <Button variant="glass" size="xl" className="group">
-                  <Calendar className="w-5 h-5 mr-2" />
-                  Schedule Demo Call
-                  <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
-                </Button>
-              }
-            />
-          </div>
         </div>
       </div>
     </section>

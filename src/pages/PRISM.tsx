@@ -12,31 +12,31 @@ const PRISM = () => {
     {
       icon: Lock,
       title: "Privacy First",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      description: "Deployed entirely on local servers or private cloud, PRISM guarantees data stays secure and under full user control."
     },
     {
       icon: Server,
-      title: "Local Processing",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      title: "Multimodal Local Processing",
+      description: "Processes text, emails, scanned docs, tables, images, audio, and video files directly on-prem without external calls."
     },
     {
       icon: Cpu,
-      title: "Advanced RAG",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      title: "Smart Retrieval & Reporting",
+      description: "Advanced RAG with multilingual understanding, domain fine-tuning, and generation of reports, summaries, and answers with evidence and confidence scores."
     },
     {
       icon: Database,
-      title: "Enterprise Scale",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      title: "Scalable & Extensible",
+      description: "Handles enterprise-scale document management, connectors to local datasets, customizable workflows, and metadata extraction."
     }
   ];
 
   const benefits = [
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-    "Sed do eiusmod tempor incididunt ut labore et dolore",
-    "Ut enim ad minim veniam, quis nostrud exercitation",
-    "Duis aute irure dolor in reprehenderit in voluptate",
-    "Excepteur sint occaecat cupidatat non proident"
+    "End-to-end local deployment, no external data transfer",
+    "Supports scanned tables, multimedia, and multilingual files",
+    "Answers include evidence and confidence score",
+    "Role-based access and customizable UI per user",
+    "Export results in PDF, Word, or Excel formats"
   ];
 
   return (
@@ -54,10 +54,10 @@ const PRISM = () => {
           <div className="max-w-4xl">
             <div className="flex items-center gap-4 mb-6">
               <div className="w-16 h-16 bg-white/20 rounded-xl flex items-center justify-center">
-                <Shield className="w-8 h-8 text-white" />
+                <img src="src/assets/prism.png" alt="PRISM" className="w-25 h-25 object-contain" />
               </div>
               <Badge variant="secondary" className="bg-white/20 text-white border-white/30">
-                Privacy-Respecting RAG Pipeline
+                Privacy-Respecting Retrieval & Information Synthesis Machine
               </Badge>
             </div>
             
@@ -65,9 +65,7 @@ const PRISM = () => {
               PRISM
             </h1>
             <p className="text-xl text-white/90 mb-8 max-w-2xl leading-relaxed">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-              incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis 
-              nostrud exercitation ullamco laboris.
+              A local, privacy-focused AI platform for secure analysis, summarization, and structured extraction from complex documents—text, images, tables, audio, and more—powered by multilingual and multimodal intelligence.
             </p>
             
             <div className="flex gap-4">
@@ -79,7 +77,7 @@ const PRISM = () => {
                 }
               />
               <Button variant="outline" size="xl" className="border-white/30 text-white hover:bg-white/10">
-                Technical Specs
+                Online Demo Coming Soon
               </Button>
             </div>
           </div>
@@ -94,8 +92,7 @@ const PRISM = () => {
               Advanced <span className="bg-gradient-primary bg-clip-text text-transparent">Capabilities</span>
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-              tempor incididunt ut labore et dolore magna aliqua.
+              PRISM is built to handle complex enterprise needs across languages, formats, and user roles—without compromising data privacy.
             </p>
           </div>
 
@@ -129,9 +126,7 @@ const PRISM = () => {
                   Why Choose PRISM?
                 </h2>
                 <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  Whether you're working with internal emails, scanned reports, foreign-language documents, or structured business data, PRISM helps extract meaning, summarize results, and generate usable output—all traceable and secure.
                 </p>
                 
                 <div className="space-y-4">
@@ -147,8 +142,7 @@ const PRISM = () => {
               <div className="bg-gradient-accent rounded-2xl p-8 text-white">
                 <h3 className="text-2xl font-bold mb-4">Ready to Deploy?</h3>
                 <p className="text-white/90 mb-6">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-                  tempor incididunt ut labore et dolore magna aliqua.
+                  PRISM can be installed on your infrastructure or private cloud, customized for your domain, and scaled to meet your team's data processing needs.
                 </p>
                 <ContactForm
                   trigger={

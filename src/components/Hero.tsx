@@ -24,9 +24,7 @@ const Hero = () => {
           </h1>
           
           <p className="text-xl md:text-2xl mb-8 text-white/90 max-w-2xl mx-auto leading-relaxed">
-            Co-founded by EPFL alumni and industry veterans from the banking and humanitarian AI sector, 
-            we transform businesses with cutting-edge artificial intelligence solutions. 
-            From GenAI to computer vision and machine learning, we deliver intelligent systems that drive innovation.
+            EPFL alumni and AI industry experts delivering advanced AI, GenAI, and computer vision solutions for your business.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
@@ -39,23 +37,23 @@ const Hero = () => {
           </div>
 
           {/* Stats */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-2xl mx-auto">
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-8 max-w-2xl mx-auto">
             <div className="text-center">
-              <div className="text-3xl font-bold text-accent">50+</div>
-              <div className="text-white/70">AI Projects</div>
+              <div className="text-3xl font-bold text-accent">Lausanne</div>
+              <div className="text-white/70">Based</div>
             </div>
             <div className="text-center">
-              <div className="text-3xl font-bold text-accent">99%</div>
-              <div className="text-white/70">Accuracy</div>
+              <div className="text-3xl font-bold text-accent">EPFL</div>
+              <div className="text-white/70">Alumni Team</div>
             </div>
             <div className="text-center">
-              <div className="text-3xl font-bold text-accent">24/7</div>
-              <div className="text-white/70">Support</div>
+              <div className="text-3xl font-bold text-accent">3+</div>
+              <div className="text-white/70">Industries Served</div>
             </div>
-            <div className="text-center">
+            {/* <div className="text-center">
               <div className="text-3xl font-bold text-accent">100%</div>
-              <div className="text-white/70">Privacy</div>
-            </div>
+              <div className="text-white/70">Client Focus</div>
+            </div> */}
           </div>
         </div>
       </div>

@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import ContactForm from "./ContactForm";
 
 const Navigation = () => {
@@ -11,9 +12,9 @@ const Navigation = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <div className="text-2xl font-bold text-white">
+          <Link to="/" className="text-2xl font-bold text-white hover:text-white/80 transition-colors">
             Ethinc
-          </div>
+          </Link>
 
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center space-x-8">
@@ -32,7 +33,7 @@ const Navigation = () => {
             <ContactForm
               trigger={
                 <Button variant="hero" size="sm">
-                  Book Demo
+                  Contact Us
                 </Button>
               }
             />
@@ -66,7 +67,7 @@ const Navigation = () => {
               <ContactForm
                 trigger={
                   <Button variant="hero" size="sm" className="w-fit">
-                    Book Demo
+                    Contact Us
                   </Button>
                 }
               />

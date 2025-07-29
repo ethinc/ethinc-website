@@ -1,34 +1,23 @@
 import { Button } from "@/components/ui/button";
 import { Mail, Phone, MapPin, Twitter, Linkedin, Github } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
     <footer id="contact" className="bg-card text-foreground py-16">
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
           {/* Company Info */}
-          <div className="space-y-4">
-            <h3 className="text-2xl font-bold">Ethinc</h3>
-            <p className="text-muted-foreground leading-relaxed">
-              Transforming businesses with cutting-edge AI solutions. 
-              From GenAI to computer vision, we deliver intelligent systems that drive innovation.
-            </p>
-            <div className="flex space-x-4">
-              <Twitter className="w-5 h-5 text-muted-foreground hover:text-accent cursor-pointer transition-colors" />
-              <Linkedin className="w-5 h-5 text-muted-foreground hover:text-accent cursor-pointer transition-colors" />
-              <Github className="w-5 h-5 text-muted-foreground hover:text-accent cursor-pointer transition-colors" />
-            </div>
-          </div>
 
           {/* Services */}
           <div className="space-y-4">
             <h4 className="text-lg font-semibold">Services</h4>
             <ul className="space-y-2 text-muted-foreground">
+            <li className="hover:text-foreground cursor-pointer transition-colors">Natural Language Processing (NLP)</li>
               <li className="hover:text-foreground cursor-pointer transition-colors">Generative AI</li>
-              <li className="hover:text-foreground cursor-pointer transition-colors">Computer Vision</li>
-              <li className="hover:text-foreground cursor-pointer transition-colors">Machine Learning</li>
-              <li className="hover:text-foreground cursor-pointer transition-colors">MLOps</li>
-              <li className="hover:text-foreground cursor-pointer transition-colors">Software Engineering</li>
+              <li className="hover:text-foreground cursor-pointer transition-colors">Computer Vision & ML Applications</li>
+              <li className="hover:text-foreground cursor-pointer transition-colors">Engineering, MLOps & Infrastructure</li>
+              {/* <li className="hover:text-foreground cursor-pointer transition-colors">Enterprise AI Strategy, Integration & Governance</li> */}
             </ul>
           </div>
 
@@ -36,10 +25,13 @@ const Footer = () => {
           <div className="space-y-4">
             <h4 className="text-lg font-semibold">Products</h4>
             <ul className="space-y-2 text-muted-foreground">
-              <li className="hover:text-foreground cursor-pointer transition-colors">VibeMonitor</li>
-              <li className="hover:text-foreground cursor-pointer transition-colors">PRISM</li>
-              <li className="hover:text-foreground cursor-pointer transition-colors">Book Demo</li>
-              <li className="hover:text-foreground cursor-pointer transition-colors">Case Studies</li>
+              <Link to="/vibemonitor" className="block hover:text-foreground transition-colors">
+                <li className="cursor-pointer">VibeMonitor</li>
+              </Link>
+              <Link to="/prism" className="block hover:text-foreground transition-colors">
+                <li className="cursor-pointer">PRISM</li>
+              </Link>
+              {/* <li className="hover:text-foreground cursor-pointer transition-colors">Case Studies</li> */}
             </ul>
           </div>
 
@@ -51,14 +43,27 @@ const Footer = () => {
                 <Mail className="w-4 h-4" />
                 <span>contact@ethinc.ch</span>
               </div>
-              <div className="flex items-center gap-3">
+              {/* <div className="flex items-center gap-3">
                 <Phone className="w-4 h-4" />
                 <span>+1 (555) 123-4567</span>
-              </div>
+              </div> */}
               <div className="flex items-center gap-3">
                 <MapPin className="w-4 h-4" />
                 <span>Lausanne, Vaud CH</span>
               </div>
+              <div className="flex space-x-4">
+                {/* <Twitter className="w-5 h-5 text-muted-foreground hover:text-accent cursor-pointer transition-colors" /> */}
+                <Linkedin className="w-5 h-5 text-muted-foreground hover:text-accent cursor-pointer transition-colors" />
+                <a
+                  href="https://github.com/ethinc"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Ethinc GitHub"
+                >
+                  <Github className="w-5 h-5 text-muted-foreground hover:text-accent cursor-pointer transition-colors" />
+                </a>
+              </div>
+    
             </div>
           </div>
         </div>

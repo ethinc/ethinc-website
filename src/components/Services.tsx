@@ -1,38 +1,53 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Brain, Eye, Cpu, Cog, Code, BarChart3 } from "lucide-react";
+import { Brain, Eye, Cpu, Cog, Code, BarChart3, Database, ShieldCheck } from "lucide-react";
 
 const Services = () => {
   const services = [
     {
       icon: Brain,
+      title: "Natural Language Processing (NLP)",
+      description: "Expertise in text classification, named entity recognition (NER), sentiment analysis, information extraction, and language understanding for multilingual and domain-specific applications.",
+    },
+    {
+      icon: Brain,
       title: "Generative AI",
-      description: "Advanced LLMs, content generation, and AI-powered automation solutions tailored to your business needs.",
+      description: "Advanced LLMs, content generation, prompt engineering, model adaptation and deployment, finetuning for your data, and privacy-focused solutions including on-premise and secure deployments.",
     },
     {
       icon: Eye,
       title: "Computer Vision",
-      description: "Object detection, image recognition, and visual analysis systems for industrial and commercial applications.",
-    },
-    {
-      icon: Cpu,
-      title: "Machine Learning",
-      description: "Custom ML models, predictive analytics, and intelligent decision-making systems for data-driven insights.",
+      description: "Object detection, image recognition, visual analysis, and custom model finetuning for your specific industrial or commercial use cases.",
     },
     {
       icon: Cog,
-      title: "MLOps",
-      description: "End-to-end ML pipeline management, model deployment, and production monitoring for scalable AI solutions.",
+      title: "MLOps & Privacy",
+      description: "End-to-end ML pipeline management, privacy-preserving model deployment, monitoring, and scalable infrastructure for secure and reliable AI operations.",
     },
     {
       icon: Code,
       title: "Software Engineering",
-      description: "Full-stack development, system architecture, and technical consulting for robust software solutions.",
+      description: "Full-stack development, system architecture, and technical consulting for robust, scalable, and maintainable software solutions.",
+    },
+    {
+      icon: Database,
+      title: "Data Engineering & Architecture",
+      description: "Design and implementation of scalable data pipelines, real-time processing, data lakes/warehouses, and architecture optimized for ML and analytics workflows.",
     },
     {
       icon: BarChart3,
-      title: "AI Strategy",
-      description: "Strategic AI implementation planning, technology assessment, and digital transformation guidance.",
+      title: "AI Strategy & Roadmapping",
+      description: "AI opportunity assessment, technology selection, responsible AI governance, and actionable roadmaps for digital transformation and business impact.",
     },
+    {
+      icon: BarChart3,
+      title: "Enterprise AI Integration & Enablement",
+      description: "Seamless integration of AI systems into enterprise workflows, AI-powered analysis generation, user training, and ongoing support to maximize adoption and value.",
+    },
+    {
+      icon: ShieldCheck,
+      title: "AI Governance & Compliance",
+      description: "Establishing frameworks for responsible AI use, regulatory alignment (e.g., GDPR, AI Act), risk assessment, auditability, and internal policy development for enterprise-scale deployments.",
+    }
   ];
 
   return (
@@ -43,8 +58,7 @@ const Services = () => {
             Our <span className="bg-gradient-primary bg-clip-text text-transparent">Services</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Comprehensive AI solutions from research to production, helping businesses leverage 
-            cutting-edge technology for competitive advantage.
+            AI, GenAI, and computer vision solutions for your business, delivered by EPFL alumni and industry experts. From research to production, we help you unlock value and drive innovation with advanced, privacy-focused technology.
           </p>
         </div>
 
