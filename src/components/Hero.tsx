@@ -1,8 +1,11 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
+import { useTranslation } from "react-i18next";
 import heroImage from "@/assets/hero-bg.jpg";
 
 const Hero = () => {
+  const { t } = useTranslation();
+  
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image with Overlay */}
@@ -17,45 +20,40 @@ const Hero = () => {
       <div className="relative z-10 container mx-auto px-4 text-center text-white">
         <div className="max-w-4xl mx-auto">
           <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-            Welcome to{" "}
-            <span className="bg-gradient-accent bg-clip-text text-transparent">
-              Ethinc
-            </span>
+            {t('hero.title')}
           </h1>
           
           <p className="text-xl md:text-2xl mb-8 text-white/90 max-w-2xl mx-auto leading-relaxed">
-            Co-founded by EPFL alumni and industry veterans from the banking and humanitarian AI sector, 
-            we transform businesses with cutting-edge artificial intelligence solutions. 
-            From GenAI to computer vision and machine learning, we deliver intelligent systems that drive innovation.
+            {t('hero.subtitle')}
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
             <a href="#services">
               <Button variant="accent" size="xl" className="group">
-              Get Started
+              {t('hero.cta')}
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </Button>
             </a>
           </div>
 
           {/* Stats */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-2xl mx-auto">
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-8 max-w-2xl mx-auto">
             <div className="text-center">
-              <div className="text-3xl font-bold text-accent">50+</div>
-              <div className="text-white/70">AI Projects</div>
+              <div className="text-3xl font-bold text-accent">Lausanne</div>
+              <div className="text-white/70">Based</div>
             </div>
             <div className="text-center">
-              <div className="text-3xl font-bold text-accent">99%</div>
-              <div className="text-white/70">Accuracy</div>
+              <div className="text-3xl font-bold text-accent">EPFL</div>
+              <div className="text-white/70">Alumni Team</div>
             </div>
             <div className="text-center">
-              <div className="text-3xl font-bold text-accent">24/7</div>
-              <div className="text-white/70">Support</div>
+              <div className="text-3xl font-bold text-accent">3+</div>
+              <div className="text-white/70">Industries Served</div>
             </div>
-            <div className="text-center">
+            {/* <div className="text-center">
               <div className="text-3xl font-bold text-accent">100%</div>
-              <div className="text-white/70">Privacy</div>
-            </div>
+              <div className="text-white/70">Client Focus</div>
+            </div> */}
           </div>
         </div>
       </div>

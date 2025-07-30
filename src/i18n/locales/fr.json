@@ -1,0 +1,125 @@
+{
+  "navigation": {
+    "services": "Services",
+    "products": "Produits",
+    "about": "À propos",
+    "contact": "Contact",
+    "contactUs": "Contactez-nous"
+  },
+  "hero": {
+    "title": "Solutions IA pour des applications concrètes",
+    "subtitle": "Nous nous spécialisons dans les solutions d'intelligence artificielle de pointe, du traitement du langage naturel à la vision par ordinateur, aidant les entreprises à transformer leurs opérations et à débloquer de nouvelles possibilités.",
+    "cta": "Commencer",
+    "learnMore": "En savoir plus"
+  },
+  "services": {
+    "title": "Nos Services",
+    "subtitle": "Solutions IA, GenAI et vision par ordinateur pour votre entreprise, fournies par des anciens de l'EPFL et des experts du secteur. De la recherche à la production, nous vous aidons à débloquer de la valeur et à stimuler l'innovation avec une technologie avancée et axée sur la confidentialité.",
+    "nlp": {
+      "title": "Traitement du Langage Naturel (NLP)",
+      "description": "Expertise en classification de texte, reconnaissance d'entités nommées (NER), analyse de sentiment, extraction d'informations et compréhension du langage pour des applications multilingues et spécifiques au domaine."
+    },
+    "generativeAI": {
+      "title": "IA Générative",
+      "description": "LLM avancés, génération de contenu, ingénierie de prompts, adaptation et déploiement de modèles, fine-tuning pour vos données, et solutions axées sur la confidentialité incluant les déploiements sur site et sécurisés."
+    },
+    "computerVision": {
+      "title": "Vision par Ordinateur",
+      "description": "Détection d'objets, reconnaissance d'images, analyse visuelle et fine-tuning de modèles personnalisés pour vos cas d'usage industriels ou commerciaux spécifiques."
+    },
+    "mlops": {
+      "title": "MLOps & Confidentialité",
+      "description": "Gestion de pipeline ML de bout en bout, déploiement de modèles préservant la confidentialité, surveillance et infrastructure évolutive pour des opérations IA sécurisées et fiables."
+    },
+    "softwareEngineering": {
+      "title": "Ingénierie Logicielle",
+      "description": "Développement full-stack, architecture système et conseil technique pour des solutions logicielles robustes, évolutives et maintenables."
+    },
+    "dataEngineering": {
+      "title": "Ingénierie & Architecture de Données",
+      "description": "Conception et implémentation de pipelines de données évolutifs, traitement en temps réel, data lakes/warehouses et architecture optimisée pour les workflows ML et analytiques."
+    },
+    "aiStrategy": {
+      "title": "Stratégie IA & Roadmapping",
+      "description": "Évaluation des opportunités IA, sélection technologique, gouvernance IA responsable et roadmaps actionnables pour la transformation numérique et l'impact business."
+    },
+    "enterpriseAI": {
+      "title": "Intégration & Activation IA d'Entreprise",
+      "description": "Intégration transparente des systèmes IA dans les workflows d'entreprise, génération d'analyses alimentées par l'IA, formation des utilisateurs et support continu pour maximiser l'adoption et la valeur."
+    },
+    "aiGovernance": {
+      "title": "Gouvernance & Conformité IA",
+      "description": "Établissement de cadres pour l'utilisation responsable de l'IA, alignement réglementaire (ex: GDPR, AI Act), évaluation des risques, auditabilité et développement de politiques internes pour les déploiements à l'échelle de l'entreprise."
+    }
+  },
+  "products": {
+    "title": "Nos Produits",
+    "subtitle": "Produits IA de pointe conçus pour transformer la façon dont les entreprises comprennent et interagissent avec les données tout en maintenant les plus hauts standards de confidentialité.",
+    "vibeMonitor": {
+      "title": "VibeMonitor",
+      "subtitle": "Intelligence des Réseaux Sociaux",
+      "description": "Génération de rapports avancés à partir de plateformes de réseaux sociaux incluant Reddit, Twitter et LinkedIn. Notre IA comprend et analyse les vidéos, l'audio, le texte et les images pour fournir des insights complets sur le sentiment public et les tendances.",
+      "features": [
+        "Surveillance multi-plateformes des réseaux sociaux",
+        "Analyse de contenu multimédia (vidéo, audio, texte, images)",
+        "Suivi de sentiment en temps réel",
+        "Tableau de bord de rapports complet",
+        "Identification et prédiction de tendances"
+      ]
+    },
+    "prism": {
+      "title": "PRISM",
+      "subtitle": "Machine de Récupération et de Synthèse d'Informations Respectueuse de la Confidentialité",
+      "description": "Une plateforme IA entièrement locale, axée sur la confidentialité, qui analyse et résume divers types de documents, prend en charge le traitement multilingue et fournit des insights vérifiables et exportables—tout en assurant un contrôle complet des données.",
+      "features": [
+        "Prend en charge le texte, les médias, les emails et le contenu multilingue",
+        "Extrait les métadonnées et les données structurées des documents",
+        "Les réponses incluent les sources et les scores de confiance",
+        "Rôles, permissions et interface personnalisables",
+        "Fonctionne localement ou dans le cloud privé, avec des options de fine-tuning"
+      ]
+    },
+    "keyFeatures": "Fonctionnalités Clés :",
+    "learnMore": "En savoir plus"
+  },
+  "about": {
+    "title": "Notre Équipe",
+    "subtitle": "Une équipe d'experts techniques avec une vaste expérience en conseil et développement de produits, fournissant des solutions innovantes dans divers secteurs.",
+    "description": "Chez Ethinc, nous croyons au pouvoir transformateur de l'intelligence artificielle. Notre équipe d'experts combine une connaissance technique approfondie avec une compréhension pratique des affaires pour fournir des solutions IA qui produisent de vrais résultats.",
+    "mission": "Notre mission est de démocratiser la technologie IA et de la rendre accessible aux entreprises de toutes tailles.",
+    "values": {
+      "innovation": "Innovation",
+      "excellence": "Excellence",
+      "collaboration": "Collaboration",
+      "integrity": "Intégrité"
+    }
+  },
+  "footer": {
+    "services": "Services",
+    "products": "Produits",
+    "contact": "Contact",
+    "location": "Lausanne, Vaud CH",
+    "email": "contact@ethinc.ch",
+    "copyright": "© 2025 Ethinc. Tous droits réservés.",
+    "privacy": "Politique de confidentialité",
+    "terms": "Conditions d'utilisation",
+    "cookies": "Politique des cookies"
+  },
+  "contact": {
+    "title": "Contactez-nous",
+    "subtitle": "Prêt à transformer votre entreprise avec l'IA ? Parlons-en.",
+    "name": "Nom",
+    "email": "Email",
+    "company": "Entreprise",
+    "phone": "Téléphone",
+    "message": "Message",
+    "send": "Envoyer le message",
+    "sending": "Envoi en cours...",
+    "success": "Message envoyé avec succès !",
+    "error": "Erreur lors de l'envoi du message. Veuillez réessayer."
+  },
+  "language": {
+    "en": "English",
+    "fr": "Français"
+  }
+} 

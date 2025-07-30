@@ -13,34 +13,38 @@ import PosterImage from "@/assets/hero-bg.jpg";
 const VibeMonitor = () => {
   const features = [
     {
-      icon: Users,
-      title: "Sentiment Analysis",
-      description: "Gain deep insight into influential posts shaping any topic and track trend evolution. See how audience clusters contribute, what narratives they promote, and how these shift over time—all with clear AI-powered summaries of key developments and embeddings for quantitative analysis"
-    },
-    {
-      icon: BarChart3,
-      title: "Advanced Analytics",
-      description: "Gain deep insights into social media trends with advanced analytics. Our AI-powered platform provides real-time data visualization and trend analysis to help you make informed decisions."
+      icon: Shield,
+      title: "Real-Time Early Warning",
+      description:
+        "Built for critical environments—finance, humanitarian response, crisis comms—our platform detects emerging risks in near real time, identifying shifts in sentiment, virality spikes, and coordinated narratives before they escalate.",
     },
     {
       icon: Globe,
-      title: "Multi-Platform Monitoring",
-      description: "Comprehensively monitor public sentiment across Reddit, Twitter, LinkedIn, and more — in any language. Our multilingual AI analyzes text, audio, video, and images to uncover the most influential posts, track trend evolution, and identify the clusters of people shaping each narrative."
+      title: "Multilingual & Multimodal Coverage",
+      description:
+        "Analyzes content across formats (text, memes, reels, podcasts) and languages—including mixed-language posts—at scale. Enables monitoring of global narratives without blind spots or lag.",
     },
     {
-      icon: Shield,
-      title: "Real-time Insights",
-      description: "Lightining fast insights into public sentiment and trends. Our AI processes vast amounts of data in real-time, ensuring you never miss a critical development."
-    }
+      icon: Users,
+      title: "Narrative & Cluster Analysis",
+      description:
+        "Goes beyond keywords and sentiment. Identifies which audience segments are driving conversations, how narratives evolve, and which content types (e.g., visual memes vs. text threads) are gaining traction.",
+    },
+    {
+      icon: BarChart3,
+      title: "Forecasting & Actionable Intelligence",
+      description:
+        "Provides not just what’s happening, but why—and what’s next. Includes trend forecasting, scenario modeling, and prescriptive recommendations to inform operational or strategic response.",
+    },
   ];
 
   const benefits = [
-    "State-of-the-art comprehensive social media monitoring",
-    "Real-time sentiment tracking",
-    "Multilingual and multimodal analysis (text, audio, video, images)",
-    "Privacy and security at the core",
-    "Competitive pricing with no hidden fees",
-    "Dedicated support and continuous updates",
+    "Real-time, event-driven detection with no batch delays",
+    "Multimodal analysis: video, image, text, audio",
+    "Mixed-language and cross-platform coverage",
+    "Prescriptive alerts, not just summaries",
+    "Deployed locally for full data sovereignty",
+    "Modular architecture tailored to operational needs",
   ];
 
   return (
@@ -69,7 +73,7 @@ const VibeMonitor = () => {
               VibeMonitor
             </h1>
             <p className="text-xl text-white/90 mb-8 max-w-2xl leading-relaxed">
-              Advanced report generation from social media platforms including Reddit, Twitter, and LinkedIn. Our GenAI tool understands and analyzes videos, audio, text, and images to provide comprehensive insights into public sentiment and trends.
+            A real-time AI platform that extracts structured insights from social media—reels, memes, videos, and multilingual posts—while ensuring full data privacy and regulatory compliance. Designed for high-stakes sectors like finance and humanitarian response, it delivers predictive and prescriptive insights, and supports modular deployment.
             </p>
             
             <div className="flex gap-4">
@@ -83,7 +87,7 @@ const VibeMonitor = () => {
               <Dialog>
                 <DialogTrigger asChild>
                   <Button variant="outline" size="xl" className="border-white/30 text-white hover:bg-white/10">
-                  Watch Demo
+                  Online Demo Coming Soon
                   </Button>
                 </DialogTrigger>
                 <DialogContent className="max-w-4xl w-full p-0">
@@ -110,7 +114,7 @@ const VibeMonitor = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-foreground mb-6">
-              Powerful <span className="bg-gradient-accent bg-clip-text text-transparent">Features</span>
+              <span className="bg-gradient-accent bg-clip-text text-transparent">Features</span>
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
               VibeMonitor offers a suite of powerful features designed to give you deep insights into social media trends and public sentiment.
@@ -147,7 +151,7 @@ const VibeMonitor = () => {
                   Why Choose VibeMonitor?
                 </h2>
                 <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-                  VibeMonitor delivers unmatched insights into social media trends and public sentiment. Harness advanced AI for real-time, actionable data—supported by robust privacy, security, competitive pricing, and a dedication to quality.
+                Most tools miss real-time events, ignore memes and video, and can’t handle mixed languages. VibeMonitor does all three—fast, locally, and without leaking data.
                 </p>
                 
                 <div className="space-y-4">

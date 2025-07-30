@@ -1,38 +1,56 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Brain, Eye, Cpu, Cog, Code, BarChart3 } from "lucide-react";
+import { Brain, Eye, Cpu, Cog, Code, BarChart3, Database, ShieldCheck } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 const Services = () => {
+  const { t } = useTranslation();
+  
   const services = [
     {
       icon: Brain,
-      title: "Generative AI",
-      description: "Advanced LLMs, content generation, and AI-powered automation solutions tailored to your business needs.",
+      title: t('services.nlp.title'),
+      description: t('services.nlp.description'),
+    },
+    {
+      icon: Brain,
+      title: t('services.generativeAI.title'),
+      description: t('services.generativeAI.description'),
     },
     {
       icon: Eye,
-      title: "Computer Vision",
-      description: "Object detection, image recognition, and visual analysis systems for industrial and commercial applications.",
-    },
-    {
-      icon: Cpu,
-      title: "Machine Learning",
-      description: "Custom ML models, predictive analytics, and intelligent decision-making systems for data-driven insights.",
+      title: t('services.computerVision.title'),
+      description: t('services.computerVision.description'),
     },
     {
       icon: Cog,
-      title: "MLOps",
-      description: "End-to-end ML pipeline management, model deployment, and production monitoring for scalable AI solutions.",
+      title: t('services.mlops.title'),
+      description: t('services.mlops.description'),
     },
     {
       icon: Code,
-      title: "Software Engineering",
-      description: "Full-stack development, system architecture, and technical consulting for robust software solutions.",
+      title: t('services.softwareEngineering.title'),
+      description: t('services.softwareEngineering.description'),
+    },
+    {
+      icon: Database,
+      title: t('services.dataEngineering.title'),
+      description: t('services.dataEngineering.description'),
     },
     {
       icon: BarChart3,
-      title: "AI Strategy",
-      description: "Strategic AI implementation planning, technology assessment, and digital transformation guidance.",
+      title: t('services.aiStrategy.title'),
+      description: t('services.aiStrategy.description'),
     },
+    {
+      icon: BarChart3,
+      title: t('services.enterpriseAI.title'),
+      description: t('services.enterpriseAI.description'),
+    },
+    {
+      icon: ShieldCheck,
+      title: t('services.aiGovernance.title'),
+      description: t('services.aiGovernance.description'),
+    }
   ];
 
   return (
@@ -40,11 +58,10 @@ const Services = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-            Our <span className="bg-gradient-primary bg-clip-text text-transparent">Services</span>
+            {t('services.title')}
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Comprehensive AI solutions from research to production, helping businesses leverage 
-            cutting-edge technology for competitive advantage.
+            {t('services.subtitle')}
           </p>
         </div>
 
