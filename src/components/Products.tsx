@@ -79,14 +79,13 @@ const Products = () => {
                 </div>
 
                 <div className="flex gap-3 pt-4">
-                  {/* <ContactForm
+                  {<ContactForm
                     trigger={
                       <Button variant="hero" className="flex-1">
-                        <Calendar className="w-4 h-4 mr-2" />
-                        Book Demo
+                        {t('products.requestDemo')}
                       </Button>
                     }
-                  /> */}
+                  />}
                   <Link to={product.link} className="flex-1">
                     <Button variant="outline" className="w-full">
                       {t('products.learnMore')}

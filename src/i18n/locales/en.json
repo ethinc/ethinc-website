@@ -80,7 +80,8 @@
       ]
     },
     "keyFeatures": "Key Features:",
-    "learnMore": "Learn More"
+    "learnMore": "Learn More",
+    "requestDemo": "Book Demo"
   },
   "about": {
     "title": "Our Team",
@@ -92,6 +93,21 @@
       "excellence": "Excellence",
       "collaboration": "Collaboration",
       "integrity": "Integrity"
+    },
+    "nizar": {
+      "name": "Nizar Ghandri",
+      "role": "Co-Founder & Chief Technology Officer (CTO)",
+      "bio": "Former GenAI Tech Lead at UBS with extensive experience in AI for banking, telecommunications, and enterprise solutions. Expert in building scalable AI systems that drive real business value."
+    },
+    "selim": {
+      "name": "Selim Fekih",
+      "role": "Co-Founder & Chief Operating Officer (COO)",
+      "bio": "AI consultant specializing in the humanitarian sector, with hands-on experience developing NLP solutions and innovative products to address humanitarian challenges."
+    },
+    "badis": {
+      "name": "Badis Machraoui",
+      "role": "Co-Founder & Software/AI Engineer",
+      "bio": "Focuses on the development of our platforms, including AI development, prompt engineering, and software backend. Dedicated to building robust, scalable systems that power our AI solutions."
     }
   },
   "footer": {

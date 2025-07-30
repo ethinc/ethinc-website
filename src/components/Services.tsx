@@ -8,13 +8,13 @@ const Services = () => {
   const services = [
     {
       icon: Brain,
-      title: t('services.nlp.title'),
-      description: t('services.nlp.description'),
+      title: t('services.generativeAI.title'),
+      description: t('services.generativeAI.description'),
     },
     {
       icon: Brain,
-      title: t('services.generativeAI.title'),
-      description: t('services.generativeAI.description'),
+      title: t('services.nlp.title'),
+      description: t('services.nlp.description'),
     },
     {
       icon: Eye,

@@ -80,7 +80,8 @@
       ]
     },
     "keyFeatures": "Fonctionnalités Clés :",
-    "learnMore": "En savoir plus"
+    "learnMore": "En savoir plus",
+    "requestDemo": "Réserver une Démo"
   },
   "about": {
     "title": "Notre Équipe",
@@ -92,6 +93,21 @@
       "excellence": "Excellence",
       "collaboration": "Collaboration",
       "integrity": "Intégrité"
+    },
+    "nizar": {
+      "name": "Nizar Ghandri",
+      "role": "Co-fondateur & Directeur Technique (CTO)",
+      "bio": "Ancien responsable technique GenAI chez UBS avec une vaste expérience en IA pour la banque, les télécommunications et les solutions d'entreprise. Expert dans la création de systèmes IA évolutifs générant une réelle valeur business."
+    },
+    "selim": {
+      "name": "Selim Fekih",
+      "role": "Co-fondateur & Directeur des Opérations (COO)",
+      "bio": "Consultant IA spécialisé dans le secteur humanitaire, avec une expérience pratique dans le développement de solutions NLP et de produits innovants pour relever les défis humanitaires."
+    },
+    "badis": {
+      "name": "Badis Machraoui",
+      "role": "Co-fondateur & Ingénieur Logiciel/IA",
+      "bio": "Se concentre sur le développement de nos plateformes, incluant le développement IA, l'ingénierie de prompts et le backend logiciel. Dédié à la création de systèmes robustes et évolutifs qui alimentent nos solutions IA."
     }
   },
   "footer": {

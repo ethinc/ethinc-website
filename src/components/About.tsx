@@ -28,12 +28,10 @@ const About = () => {
                   <img src="https://media.licdn.com/dms/image/v2/D4E03AQEnBj4NUYDNtg/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1696854774907?e=1756339200&v=beta&t=52LovIy1__yBFFESDssjN__pBv5EfMRqgHY-eZZeKWc" alt="NG" className="w-full h-full object-cover" />
                 </div>
                 <div className="flex-1">
-                  <h3 className="text-2xl font-bold mb-2">Nizar Ghandri</h3>
-                  <p className="text-accent font-medium mb-3">Co-Founder & Development Lead</p>
+                  <h3 className="text-2xl font-bold mb-2">{t('about.nizar.name')}</h3>
+                  <p className="text-accent font-medium mb-3">{t('about.nizar.role')}</p>
                   <p className="text-muted-foreground mb-4 leading-relaxed">
-                    Former GenAI Tech Lead at UBS with extensive experience in AI for banking, 
-                    telecommunications, and enterprise solutions. Expert in building scalable AI 
-                    systems that drive real business value.
+                    {t('about.nizar.bio')}
                   </p>
                   <Button variant="outline" size="sm" asChild>
                     <a 
@@ -60,10 +58,10 @@ const About = () => {
                   <img src="https://media.licdn.com/dms/image/v2/C4E03AQFwDY6141Kx3w/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1551684075473?e=1756339200&v=beta&t=0C6pHYlAR0yY5wKWDvOJJJLHklSlgQMKPy0qEU4eLf8" alt="NG" className="w-full h-full object-cover" />
                 </div>
                 <div className="flex-1">
-                  <h3 className="text-2xl font-bold mb-2">Selim Fekih</h3>
-                  <p className="text-accent font-medium mb-3">Co-Founder & Operations Lead</p>
+                  <h3 className="text-2xl font-bold mb-2">{t('about.selim.name')}</h3>
+                  <p className="text-accent font-medium mb-3">{t('about.selim.name')}</p>
                   <p className="text-muted-foreground mb-4 leading-relaxed">
-                    AI consultant specializing in the humanitarian sector, with hands-on experience developing NLP solutions and innovative products to address humanitarian challenges.
+                    {t('about.selim.bio')}
                   </p>
                   <Button variant="outline" size="sm" asChild>
                     <a 
@@ -88,13 +86,13 @@ const About = () => {
             <CardContent className="p-0">
               <div className="flex items-start gap-6">
                 <div className="w-20 h-20 bg-gradient-primary rounded-full flex items-center justify-center text-2xl font-bold text-white overflow-hidden">
-                  <img src="src/assets/badis.jpg" alt="NG" className="w-full h-full object-cover" />
+                  <img src="https://media.licdn.com/dms/image/v2/D4E03AQH2pxGIwDpjcg/profile-displayphoto-crop_800_800/B4EZhWp9K8HEAI-/0/1753800497760?e=1756944000&v=beta&t=T_cbNGBM0U9p4MNzuLS8WqVvOp-LlukFBxq1cO4JtMs" alt="NG" className="w-full h-full object-cover" />
                 </div>
                 <div className="flex-1">
-                  <h3 className="text-2xl font-bold mb-2">Badis Machraoui</h3>
-                  <p className="text-accent font-medium mb-3">Co-founder & Developer</p>
+                  <h3 className="text-2xl font-bold mb-2">{t('about.badis.name')}</h3>
+                  <p className="text-accent font-medium mb-3">{t('about.badis.role')}</p>
                   <p className="text-muted-foreground mb-4 leading-relaxed">
-                    Focuses on the development of our platforms, including AI development, prompt engineering, and software backend. Dedicated to building robust, scalable systems that power our AI solutions.
+                    {t('about.badis.bio')}
                   </p>
                   <Button variant="outline" size="sm" asChild>
                     <a 
