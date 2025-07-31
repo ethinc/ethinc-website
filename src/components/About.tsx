@@ -82,7 +82,7 @@ const About = () => {
         
 
           {/* Badis Machraoui */}
-          <Card className="p-8 bg-card/50 border-border/50 backdrop-blur-sm lg:col-span-full lg:mx-auto">
+          <Card className="p-8 bg-card/50 border-border/50 backdrop-blur-sm lg:col-span-1 lg:mx-auto">
             <CardContent className="p-0">
               <div className="flex items-start gap-6">
                 <div className="w-20 h-20 bg-gradient-primary rounded-full flex items-center justify-center text-2xl font-bold text-white overflow-hidden">
