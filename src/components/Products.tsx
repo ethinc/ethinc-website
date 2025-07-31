@@ -82,6 +82,7 @@ const Products = () => {
                   {<ContactForm
                     trigger={
                       <Button variant="hero" className="flex-1">
+                        <Calendar className="w-5 h-5 mr-2" />
                         {t('products.requestDemo')}
                       </Button>
                     }

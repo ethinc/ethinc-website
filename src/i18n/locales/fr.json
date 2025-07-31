@@ -110,6 +110,11 @@
       "bio": "Se concentre sur le développement de nos plateformes, incluant le développement IA, l'ingénierie de prompts et le backend logiciel. Dédié à la création de systèmes robustes et évolutifs qui alimentent nos solutions IA."
     }
   },
+  "cta": {
+    "title": "Intéressé à travailler avec nous ?",
+    "subtitle": "Planifiez un appel et découvrez comment les solutions IA d'Ethinc peuvent améliorer vos opérations.",
+    "button": "Planifier un appel"
+  },
   "footer": {
     "services": "Services",
     "products": "Produits",

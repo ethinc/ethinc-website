@@ -59,7 +59,7 @@ const About = () => {
                 </div>
                 <div className="flex-1">
                   <h3 className="text-2xl font-bold mb-2">{t('about.selim.name')}</h3>
-                  <p className="text-accent font-medium mb-3">{t('about.selim.name')}</p>
+                  <p className="text-accent font-medium mb-3">{t('about.selim.role')}</p>
                   <p className="text-muted-foreground mb-4 leading-relaxed">
                     {t('about.selim.bio')}
                   </p>
@@ -82,7 +82,7 @@ const About = () => {
         
 
           {/* Badis Machraoui */}
-          <Card className="p-8 bg-card/50 border-border/50 backdrop-blur-sm">
+          <Card className="p-8 bg-card/50 border-border/50 backdrop-blur-sm lg:col-span-full lg:mx-auto lg:max-w-md">
             <CardContent className="p-0">
               <div className="flex items-start gap-6">
                 <div className="w-20 h-20 bg-gradient-primary rounded-full flex items-center justify-center text-2xl font-bold text-white overflow-hidden">
