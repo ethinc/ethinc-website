@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -28,6 +28,21 @@ const ContactForm = ({ trigger }: ContactFormProps) => {
     message: "",
   });
 
+  // Captcha state
+  const [captcha, setCaptcha] = useState({ num1: 0, num2: 0, answer: "" });
+  
+  // Generate new captcha question
+  const generateCaptcha = () => {
+    const num1 = Math.floor(Math.random() * 10) + 1;
+    const num2 = Math.floor(Math.random() * 10) + 1;
+    setCaptcha({ num1, num2, answer: "" });
+  };
+
+  // Initialize captcha on component mount
+  useEffect(() => {
+    generateCaptcha();
+  }, []);
+
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
     setFormData(prev => ({
@@ -36,8 +51,28 @@ const ContactForm = ({ trigger }: ContactFormProps) => {
     }));
   };
 
+  const handleCaptchaChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setCaptcha(prev => ({
+      ...prev,
+      answer: e.target.value
+    }));
+  };
+
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+    
+    // Validate captcha
+    const correctAnswer = captcha.num1 + captcha.num2;
+    if (parseInt(captcha.answer) !== correctAnswer) {
+      toast({
+        title: "Captcha failed",
+        description: "Please solve the math problem correctly.",
+        variant: "destructive",
+      });
+      generateCaptcha(); // Generate new captcha
+      return;
+    }
+    
     // User will handle the sending logic
     console.log("Form submitted:", formData);
     
@@ -55,6 +90,7 @@ const ContactForm = ({ trigger }: ContactFormProps) => {
       phone: "",
       message: "",
     });
+    generateCaptcha(); // Reset captcha
     setIsOpen(false);
   };
 
@@ -132,6 +168,25 @@ const ContactForm = ({ trigger }: ContactFormProps) => {
               rows={4}
               required
             />
+          </div>
+
+          {/* Captcha */}
+          <div className="space-y-2">
+            <Label htmlFor="captcha">Security Check *</Label>
+            <div className="flex items-center space-x-3">
+              <div className="text-sm font-medium bg-muted px-3 py-2 rounded border">
+                {captcha.num1} + {captcha.num2} = ?
+              </div>
+              <Input
+                id="captcha"
+                type="number"
+                value={captcha.answer}
+                onChange={handleCaptchaChange}
+                placeholder="Answer"
+                className="w-20"
+                required
+              />
+            </div>
           </div>
 
           <div className="flex justify-end space-x-2 pt-4">
