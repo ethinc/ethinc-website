@@ -69,7 +69,7 @@
     },
     "prism": {
       "title": "PRISM",
-      "subtitle": "Récupération et Synthèse d'Informations en toute Confidentialité",
+      "subtitle": "Récupération et synthèse confidentielle d'informations",
       "description": "Une plateforme IA entièrement locale, axée sur la confidentialité, qui analyse et résume divers types de documents, prend en charge le traitement multilingue et fournit des insights vérifiables et exportables—tout en assurant un contrôle complet des données.",
       "features": [
         "Prend en charge le texte, les médias, les emails et le contenu multilingue",
