@@ -60,7 +60,7 @@
       "subtitle": "Social Media Intelligence",
       "description": "Advanced report generation from social media platforms including Reddit, Twitter, and LinkedIn. Our AI understands and analyzes videos, audio, text, and images to provide comprehensive insights into public sentiment and trends.",
       "features": [
-        "Multi-platform social media monitoring",
+        "Multi-platform social media monitoring (Reddit, Twitter, LinkedIn)",
         "Multimedia content analysis (video, audio, text, images)",
         "Real-time sentiment tracking",
         "Comprehensive reporting dashboard",

@@ -60,7 +60,7 @@
       "subtitle": "Intelligence des Réseaux Sociaux",
       "description": "Génération de rapports avancés à partir de plateformes de réseaux sociaux incluant Reddit, Twitter et LinkedIn. Notre IA comprend et analyse les vidéos, l'audio, le texte et les images pour fournir des insights complets sur le sentiment public et les tendances.",
       "features": [
-        "Surveillance multi-plateformes des réseaux sociaux",
+        "Surveillance multi-plateformes des réseaux sociaux (Reddit, Twitter, LinkedIn)",
         "Analyse de contenu multimédia (vidéo, audio, texte, images)",
         "Suivi de sentiment en temps réel",
         "Tableau de bord de rapports complet",
