@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import ContactForm from "./ContactForm";
 import LanguageSwitcher from "./LanguageSwitcher";
+import EthincIcon from "@/assets/ethinc_icon.png";
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -16,7 +17,7 @@ const Navigation = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2 text-2xl font-bold text-white hover:text-white/80 transition-colors">
-            <img src="/src/assets/ethinc_icon.png" alt="Ethinc" className="w-8 h-8" />
+            <img src={EthincIcon} alt="Ethinc" className="w-8 h-8" />
             <span>Ethinc</span>
           </Link>
 
