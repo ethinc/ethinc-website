@@ -12,8 +12,7 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog";
-import dotenv from 'dotenv';
-dotenv.config();
+
 
 
 

@@ -7,7 +7,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
 
   const { name, email, company, phone, message } = req.body;
 
-  const webhookUrl = process.env.SLACK_WEBHOOK_URL;
+  const webhookUrl = import.meta.env.VITE_SLACK_WEBHOOK_URL;
 
   const slackPayload = {
     text: `📬 New Contact Form Submission:\n*Name:* ${name}\n*Email:* ${email}\n*Company:* ${company}\n*Phone:* ${phone}\n*Message:* ${message}`,
