@@ -9,6 +9,10 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
 
   const webhookUrl = process.env.SLACK_WEBHOOK_URL;
 
+  if (!webhookUrl) {
+    return res.status(500).json({ error: 'Slack webhook URL not configured' });
+  }
+
   const slackPayload = {
     text: `📬 New Contact Form Submission:\n*Name:* ${name}\n*Email:* ${email}\n*Company:* ${company}\n*Phone:* ${phone}\n*Message:* ${message}`,
   };
