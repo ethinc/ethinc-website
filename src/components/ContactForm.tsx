@@ -12,6 +12,20 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog";
+import dotenv from 'dotenv';
+dotenv.config();
+
+
+
+async function sendContactForm(name: string, email: string, company: string, phone: string, message: string) {
+  const res = await fetch('/api/contact', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ name, email, company, phone,  message }),
+  });
+
+  if (!res.ok) throw new Error('Failed to send contact form');
+}
 
 interface ContactFormProps {
   trigger: React.ReactNode;
@@ -75,23 +89,31 @@ const ContactForm = ({ trigger }: ContactFormProps) => {
     
     // User will handle the sending logic
     console.log("Form submitted:", formData);
-    
-    // Show toast confirmation
-    toast({
-      title: "Message sent!",
-      description: "Thank you for your interest. We'll get back to you soon.",
-    });
-    
-    // Reset form and close dialog
-    setFormData({
-      name: "",
-      email: "",
-      company: "",
-      phone: "",
-      message: "",
-    });
-    generateCaptcha(); // Reset captcha
-    setIsOpen(false);
+
+    sendContactForm(formData.name, formData.email, formData.company, formData.phone, formData.message)
+      .then(() => {
+        toast({
+          title: "Message sent!",
+          description: "Thank you for your interest. We'll get back to you soon.",
+        });
+        setFormData({
+          name: "",
+          email: "",
+          company: "",
+          phone: "",
+          message: "",
+        });
+        generateCaptcha(); // Reset captcha
+        setIsOpen(false);
+      })
+      .catch((error) => {
+        console.error("Error sending contact form:", error);
+        toast({
+          title: "Error",
+          description: "Failed to send your message. Please try again later.",
+          variant: "destructive",
+        });
+      });
   };
 
   return (

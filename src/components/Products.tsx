@@ -4,6 +4,7 @@ import { Monitor, Shield, Calendar, ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import ContactForm from "./ContactForm";
+import PrismImage from "@/assets/prism.png";
 
 const Products = () => {
   const { t } = useTranslation();
@@ -21,7 +22,7 @@ const Products = () => {
     {
       icon: () => (
         <img
-          src="src/assets/prism.png"
+          src={PrismImage}
           alt="PRISM"
           className="w-17 h-17 object-contain"
         />
