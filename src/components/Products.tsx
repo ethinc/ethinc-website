@@ -19,21 +19,21 @@ const Products = () => {
       gradient: "bg-gradient-primary",
       link: "/vibemonitor"
     },
-    {
-      icon: () => (
-        <img
-          src={PrismImage}
-          alt="PRISM"
-          className="w-17 h-17 object-contain"
-        />
-      ),
-      title: t('products.prism.title'),
-      subtitle: t('products.prism.subtitle'),
-      description: t('products.prism.description'),
-      features: t('products.prism.features', { returnObjects: true }),
-      gradient: "bg-gradient-accent",
-      link: "/prism"
-    }
+    // {
+    //   icon: () => (
+    //     <img
+    //       src={PrismImage}
+    //       alt="PRISM"
+    //       className="w-17 h-17 object-contain"
+    //     />
+    //   ),
+    //   title: t('products.prism.title'),
+    //   subtitle: t('products.prism.subtitle'),
+    //   description: t('products.prism.description'),
+    //   features: t('products.prism.features', { returnObjects: true }),
+    //   gradient: "bg-gradient-accent",
+    //   link: "/prism"
+    // }
   ];
 
   return (
