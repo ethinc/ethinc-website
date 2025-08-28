@@ -3,6 +3,9 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Linkedin, ExternalLink } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import CVForm from "./CVForm";
+import Selim from "@/assets/people/selim.png";
+import Nizar from "@/assets/people/nizar.jpeg";
+import Badis from "@/assets/people/badis.png";
 
 const About = () => {
   const { t } = useTranslation();
@@ -25,7 +28,7 @@ const About = () => {
             <CardContent className="p-0">
               <div className="flex items-start gap-6">
                 <div className="w-20 h-20 bg-gradient-primary rounded-full flex items-center justify-center text-2xl font-bold text-white overflow-hidden">
-                  <img src="/src/assets/people/nizar.jpeg" alt="NG" className="w-full h-full object-cover" />
+                  <img src={Nizar} alt="NG" className="w-full h-full object-cover" />
                 </div>
                 <div className="flex-1">
                   <h3 className="text-2xl font-bold mb-2">{t('about.nizar.name')}</h3>
@@ -55,7 +58,7 @@ const About = () => {
             <CardContent className="p-0">
               <div className="flex items-start gap-6">
                 <div className="w-20 h-20 bg-gradient-primary rounded-full flex items-center justify-center text-2xl font-bold text-white overflow-hidden">
-                  <img src="/src/assets/people/selim.png" alt="NG" className="w-full h-full object-cover" />
+                  <img src={Selim} alt="NG" className="w-full h-full object-cover" />
                 </div>
                 <div className="flex-1">
                   <h3 className="text-2xl font-bold mb-2">{t('about.selim.name')}</h3>
@@ -86,7 +89,7 @@ const About = () => {
             <CardContent className="p-0">
               <div className="flex items-start gap-6">
                 <div className="w-20 h-20 bg-gradient-primary rounded-full flex items-center justify-center text-2xl font-bold text-white overflow-hidden">
-                  <img src="https://media.licdn.com/dms/image/v2/D4E03AQH2pxGIwDpjcg/profile-displayphoto-crop_800_800/B4EZhWp9K8HEAI-/0/1753800497760?e=1756944000&v=beta&t=T_cbNGBM0U9p4MNzuLS8WqVvOp-LlukFBxq1cO4JtMs" alt="NG" className="w-full h-full object-cover" />
+                  <img src={Badis} alt="NG" className="w-full h-full object-cover" />
                 </div>
                 <div className="flex-1">
                   <h3 className="text-2xl font-bold mb-2">{t('about.badis.name')}</h3>
