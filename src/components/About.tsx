@@ -25,7 +25,7 @@ const About = () => {
             <CardContent className="p-0">
               <div className="flex items-start gap-6">
                 <div className="w-20 h-20 bg-gradient-primary rounded-full flex items-center justify-center text-2xl font-bold text-white overflow-hidden">
-                  <img src="https://media.licdn.com/dms/image/v2/D4E03AQEnBj4NUYDNtg/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1696854774907?e=1756339200&v=beta&t=52LovIy1__yBFFESDssjN__pBv5EfMRqgHY-eZZeKWc" alt="NG" className="w-full h-full object-cover" />
+                  <img src="/src/assets/people/nizar.jpeg" alt="NG" className="w-full h-full object-cover" />
                 </div>
                 <div className="flex-1">
                   <h3 className="text-2xl font-bold mb-2">{t('about.nizar.name')}</h3>
@@ -55,7 +55,7 @@ const About = () => {
             <CardContent className="p-0">
               <div className="flex items-start gap-6">
                 <div className="w-20 h-20 bg-gradient-primary rounded-full flex items-center justify-center text-2xl font-bold text-white overflow-hidden">
-                  <img src="https://media.licdn.com/dms/image/v2/C4E03AQFwDY6141Kx3w/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1551684075473?e=1756339200&v=beta&t=0C6pHYlAR0yY5wKWDvOJJJLHklSlgQMKPy0qEU4eLf8" alt="NG" className="w-full h-full object-cover" />
+                  <img src="/src/assets/people/selim.png" alt="NG" className="w-full h-full object-cover" />
                 </div>
                 <div className="flex-1">
                   <h3 className="text-2xl font-bold mb-2">{t('about.selim.name')}</h3>
