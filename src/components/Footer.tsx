@@ -56,7 +56,14 @@ const Footer = () => {
               </div>
               <div className="flex space-x-4">
                 {/* <Twitter className="w-5 h-5 text-muted-foreground hover:text-accent cursor-pointer transition-colors" /> */}
-                <Linkedin className="w-5 h-5 text-muted-foreground hover:text-accent cursor-pointer transition-colors" />
+                <a
+                  href="https://www.linkedin.com/company/ethinc/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Ethinc LinkedIn"
+                >
+                  <Linkedin className="w-5 h-5 text-muted-foreground hover:text-accent cursor-pointer transition-colors" />
+                </a>
                 <a
                   href="https://github.com/ethinc"
                   target="_blank"
