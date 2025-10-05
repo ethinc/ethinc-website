@@ -16,8 +16,8 @@ const ScrollToTop = () => {
 };
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
-import VibeMonitor from "./pages/VibeMonitor";
-import PRISM from "./pages/PRISM";
+// import VibeMonitor from "./pages/VibeMonitor";
+// import PRISM from "./pages/PRISM";
 
 const queryClient = new QueryClient();
 
@@ -30,8 +30,8 @@ const App: React.FC = () => {
         <ScrollToTop />
         <Routes>
           <Route path="/" element={<Index />} />
-          <Route path="/vibemonitor" element={<VibeMonitor />} />
-          <Route path="/prism" element={<PRISM />} />
+          {/* <Route path="/vibemonitor" element={<VibeMonitor />} />
+          <Route path="/prism" element={<PRISM />} /> */}
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>

@@ -1,3 +1,4 @@
+/* products component temporarily removed
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Monitor, Shield, Calendar, ArrowRight } from "lucide-react";
@@ -103,4 +104,9 @@ const Products = () => {
   );
 };
 
+export default Products;
+*/
+
+// placeholder
+const Products = () => null;
 export default Products;

@@ -26,9 +26,9 @@ const Navigation = () => {
             <a href="#services" className="text-white/90 hover:text-white transition-colors">
               {t('navigation.services')}
             </a>
-            <a href="#products" className="text-white/90 hover:text-white transition-colors">
+            {/* <a href="#products" className="text-white/90 hover:text-white transition-colors">
               {t('navigation.products')}
-            </a>
+            </a> */}
             <a href="#about" className="text-white/90 hover:text-white transition-colors">
               {t('navigation.about')}
             </a>
@@ -61,9 +61,9 @@ const Navigation = () => {
               <a href="#services" className="text-white/90 hover:text-white transition-colors py-2">
                 {t('navigation.services')}
               </a>
-              <a href="#products" className="text-white/90 hover:text-white transition-colors py-2">
+              {/* <a href="#products" className="text-white/90 hover:text-white transition-colors py-2">
                 {t('navigation.products')}
-              </a>
+              </a> */}
               <a href="#about" className="text-white/90 hover:text-white transition-colors py-2">
                 {t('navigation.about')}
               </a>

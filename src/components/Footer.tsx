@@ -25,7 +25,7 @@ const Footer = () => {
           </div>
 
           {/* Products */}
-          <div className="space-y-4">
+          {/* <div className="space-y-4">
             <h4 className="text-lg font-semibold">{t('footer.products')}</h4>
             <ul className="space-y-2 text-muted-foreground">
               <Link to="/vibemonitor" className="block hover:text-foreground transition-colors">
@@ -34,9 +34,8 @@ const Footer = () => {
               <Link to="/prism" className="block hover:text-foreground transition-colors">
                 <li className="cursor-pointer">{t('products.prism.title')}</li>
               </Link>
-              {/* <li className="hover:text-foreground cursor-pointer transition-colors">Case Studies</li> */}
             </ul>
-          </div>
+          </div> */}
 
           {/* Contact */}
           <div className="space-y-4">
