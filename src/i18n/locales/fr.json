@@ -121,6 +121,9 @@
     "contact": "Contact",
     "location": "Lausanne, Vaud CH",
     "email": "contact@ethinc.ch",
+    "emailLabel": "Email",
+    "locationLabel": "Localisation",
+    "followUs": "Suivez-nous",
     "copyright": "© 2025 Ethinc. Tous droits réservés.",
     "privacy": "Politique de confidentialité",
     "terms": "Conditions d'utilisation",
@@ -137,7 +140,25 @@
     "send": "Envoyer le message",
     "sending": "Envoi en cours...",
     "success": "Message envoyé avec succès !",
-    "error": "Erreur lors de l'envoi du message. Veuillez réessayer."
+    "successDescription": "Merci pour votre intérêt. Nous vous recontacterons bientôt.",
+    "error": "Erreur lors de l'envoi du message. Veuillez réessayer.",
+    "placeholders": {
+      "name": "Votre nom complet",
+      "email": "votre@email.com",
+      "company": "Votre entreprise",
+      "phone": "Votre numéro de téléphone",
+      "message": "Parlez-nous de votre projet ou de vos besoins spécifiques...",
+      "captcha": "Réponse"
+    },
+    "captcha": {
+      "label": "Vérification de sécurité",
+      "failed": "Captcha échoué",
+      "failedDescription": "Veuillez résoudre correctement le problème mathématique."
+    },
+    "buttons": {
+      "cancel": "Annuler",
+      "send": "Envoyer le message"
+    }
   },
   "language": {
     "en": "English",

@@ -1,80 +1,80 @@
 import { Button } from "@/components/ui/button";
-import { Mail, Phone, MapPin, Twitter, Linkedin, Github } from "lucide-react";
+import { Mail, Phone, MapPin, Twitter, Linkedin, Github, ExternalLink } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
+import EthincIcon from "@/assets/ethinc_icon.png";
 
 const Footer = () => {
   const { t } = useTranslation();
+
+  const handleSmoothScroll = (e: React.MouseEvent<HTMLAnchorElement>, targetId: string) => {
+    e.preventDefault();
+    const targetElement = document.getElementById(targetId);
+    if (targetElement) {
+      targetElement.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start',
+      });
+    }
+  };
   
   return (
-    <footer id="contact" className="bg-card text-foreground py-16">
+    <footer className="bg-card text-foreground py-16">
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
-          {/* Company Info */}
-
-          {/* Services */}
-          <div className="space-y-4">
-            <h4 className="text-lg font-semibold">{t('footer.services')}</h4>
-            <ul className="space-y-2 text-muted-foreground">
-            <li className="hover:text-foreground cursor-pointer transition-colors">{t('services.nlp.title')}</li>
-              <li className="hover:text-foreground cursor-pointer transition-colors">{t('services.generativeAI.title')}</li>
-              <li className="hover:text-foreground cursor-pointer transition-colors">{t('services.computerVision.title')}</li>
-              <li className="hover:text-foreground cursor-pointer transition-colors">{t('services.mlops.title')}</li>
-              {/* <li className="hover:text-foreground cursor-pointer transition-colors">Enterprise AI Strategy, Integration & Governance</li> */}
-            </ul>
-          </div>
-
-          {/* Products */}
-          {/* <div className="space-y-4">
-            <h4 className="text-lg font-semibold">{t('footer.products')}</h4>
-            <ul className="space-y-2 text-muted-foreground">
-              <Link to="/vibemonitor" className="block hover:text-foreground transition-colors">
-                <li className="cursor-pointer">{t('products.vibeMonitor.title')}</li>
-              </Link>
-              <Link to="/prism" className="block hover:text-foreground transition-colors">
-                <li className="cursor-pointer">{t('products.prism.title')}</li>
-              </Link>
-            </ul>
-          </div> */}
-
+        <div className="mb-16">
           {/* Contact */}
-          <div className="space-y-4">
-            <h4 className="text-lg font-semibold">{t('footer.contact')}</h4>
-            <div className="space-y-3 text-muted-foreground">
-              <div className="flex items-center gap-3">
-                <Mail className="w-4 h-4" />
-                <span>{t('footer.email')}</span>
+          <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-8">
+            <div className="flex flex-col md:flex-row gap-12">
+              <div className="flex items-start gap-3">
+                <Mail className="w-5 h-5 text-accent mt-0.5 flex-shrink-0" />
+                <div>
+                  <p className="text-sm font-medium text-foreground">{t('footer.emailLabel')}</p>
+                  <a 
+                    href={`mailto:${t('footer.email')}`}
+                    className="text-muted-foreground hover:text-accent transition-colors"
+                  >
+                    {t('footer.email')}
+                  </a>
+                </div>
               </div>
-              {/* <div className="flex items-center gap-3">
-                <Phone className="w-4 h-4" />
-                <span>+1 (555) 123-4567</span>
-              </div> */}
-              <div className="flex items-center gap-3">
-                <MapPin className="w-4 h-4" />
-                <span>{t('footer.location')}</span>
+              
+              <div className="flex items-start gap-3">
+                <MapPin className="w-5 h-5 text-accent mt-0.5 flex-shrink-0" />
+                <div>
+                  <p className="text-sm font-medium text-foreground">{t('footer.locationLabel')}</p>
+                  <p className="text-muted-foreground">{t('footer.location')}</p>
+                </div>
               </div>
+            </div>
+            
+            <div className="flex-shrink-0">
+              <p className="text-sm font-medium text-foreground mb-3">{t('footer.followUs')}</p>
               <div className="flex space-x-4">
-                {/* <Twitter className="w-5 h-5 text-muted-foreground hover:text-accent cursor-pointer transition-colors" /> */}
                 <a
                   href="https://www.linkedin.com/company/ethinc/"
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="Ethinc LinkedIn"
+                  className="group"
                 >
-                  <Linkedin className="w-5 h-5 text-muted-foreground hover:text-accent cursor-pointer transition-colors" />
+                  <div className="w-10 h-10 bg-muted rounded-lg flex items-center justify-center group-hover:bg-accent group-hover:text-white transition-all">
+                    <Linkedin className="w-5 h-5" />
+                  </div>
                 </a>
                 <a
                   href="https://github.com/ethinc"
                   target="_blank"
                   rel="noopener noreferrer"
-                  aria-label="Ethinc GitHub"
+                  aria-label="Ethinc GitHub" 
+                  className="group"
                 >
-                  <Github className="w-5 h-5 text-muted-foreground hover:text-accent cursor-pointer transition-colors" />
+                  <div className="w-10 h-10 bg-muted rounded-lg flex items-center justify-center group-hover:bg-accent group-hover:text-white transition-all">
+                    <Github className="w-5 h-5" />
+                  </div>
                 </a>
               </div>
-    
             </div>
-          </div>
+            </div>
         </div>
 
         {/* Bottom Bar */}

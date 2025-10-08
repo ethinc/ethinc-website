@@ -3,17 +3,27 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Linkedin, ExternalLink } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import CVForm from "./CVForm";
+import { useIntersectionObserver } from "@/hooks/use-intersection-observer";
 import Selim from "@/assets/people/selim.png";
 import Nizar from "@/assets/people/nizar.jpeg";
 import Badis from "@/assets/people/badis.png";
 
 const About = () => {
   const { t } = useTranslation();
+  const { elementRef: titleRef, isIntersecting: titleVisible } = useIntersectionObserver();
+  const { elementRef: cardsRef, isIntersecting: cardsVisible } = useIntersectionObserver({ rootMargin: '0px 0px -50px 0px' });
   
   return (
     <section id="about" className="py-24 bg-background">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
+        <div 
+          ref={titleRef}
+          className={`text-center mb-16 transition-all duration-1000 ${
+            titleVisible 
+              ? 'opacity-100 transform translate-y-0' 
+              : 'opacity-0 transform translate-y-8'
+          }`}
+        >
           <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-primary bg-clip-text text-transparent">
             {t('about.title')}
           </h2>
@@ -22,9 +32,16 @@ const About = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
+        <div ref={cardsRef} className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
           {/* Nizar Ghandri */}
-          <Card className="p-8 bg-card/50 border-border/50 backdrop-blur-sm">
+          <Card 
+            className={`p-8 bg-card/50 border-border/50 backdrop-blur-sm transition-all duration-700 ${
+              cardsVisible 
+                ? 'opacity-100 transform translate-x-0' 
+                : 'opacity-0 transform -translate-x-8'
+            }`}
+            style={{ transitionDelay: cardsVisible ? '200ms' : '0ms' }}
+          >
             <CardContent className="p-0">
               <div className="flex items-start gap-6">
                 <div className="w-20 h-20 bg-gradient-primary rounded-full flex items-center justify-center text-2xl font-bold text-white overflow-hidden">
@@ -54,7 +71,14 @@ const About = () => {
           </Card>
 
           {/* Selim Fekih */}
-          <Card className="p-8 bg-card/50 border-border/50 backdrop-blur-sm">
+          <Card 
+            className={`p-8 bg-card/50 border-border/50 backdrop-blur-sm transition-all duration-700 ${
+              cardsVisible 
+                ? 'opacity-100 transform translate-x-0' 
+                : 'opacity-0 transform translate-x-8'
+            }`}
+            style={{ transitionDelay: cardsVisible ? '400ms' : '0ms' }}
+          >
             <CardContent className="p-0">
               <div className="flex items-start gap-6">
                 <div className="w-20 h-20 bg-gradient-primary rounded-full flex items-center justify-center text-2xl font-bold text-white overflow-hidden">
@@ -85,7 +109,14 @@ const About = () => {
         
 
           {/* Badis Machraoui */}
-          <Card className="p-8 bg-card/50 border-border/50 backdrop-blur-sm lg:col-span-2 lg:mx-auto lg:w-1/2">
+          <Card 
+            className={`p-8 bg-card/50 border-border/50 backdrop-blur-sm lg:col-span-2 lg:mx-auto lg:w-1/2 transition-all duration-700 ${
+              cardsVisible 
+                ? 'opacity-100 transform translate-y-0' 
+                : 'opacity-0 transform translate-y-8'
+            }`}
+            style={{ transitionDelay: cardsVisible ? '600ms' : '0ms' }}
+          >
             <CardContent className="p-0">
               <div className="flex items-start gap-6">
                 <div className="w-20 h-20 bg-gradient-primary rounded-full flex items-center justify-center text-2xl font-bold text-white overflow-hidden">

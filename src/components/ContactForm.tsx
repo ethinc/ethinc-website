@@ -4,6 +4,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { useToast } from "@/hooks/use-toast";
+import { useTranslation } from "react-i18next";
 import {
   Dialog,
   DialogContent,
@@ -33,6 +34,7 @@ interface ContactFormProps {
 const ContactForm = ({ trigger }: ContactFormProps) => {
   const [isOpen, setIsOpen] = useState(false);
   const { toast } = useToast();
+  const { t } = useTranslation();
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -78,8 +80,8 @@ const ContactForm = ({ trigger }: ContactFormProps) => {
     const correctAnswer = captcha.num1 + captcha.num2;
     if (parseInt(captcha.answer) !== correctAnswer) {
       toast({
-        title: "Captcha failed",
-        description: "Please solve the math problem correctly.",
+        title: t('contact.captcha.failed'),
+        description: t('contact.captcha.failedDescription'),
         variant: "destructive",
       });
       generateCaptcha(); // Generate new captcha
@@ -92,8 +94,8 @@ const ContactForm = ({ trigger }: ContactFormProps) => {
     sendContactForm(formData.name, formData.email, formData.company, formData.phone, formData.message)
       .then(() => {
         toast({
-          title: "Message sent!",
-          description: "Thank you for your interest. We'll get back to you soon.",
+          title: t('contact.success'),
+          description: t('contact.successDescription'),
         });
         setFormData({
           name: "",
@@ -108,8 +110,8 @@ const ContactForm = ({ trigger }: ContactFormProps) => {
       .catch((error) => {
         console.error("Error sending contact form:", error);
         toast({
-          title: "Error",
-          description: "Failed to send your message. Please try again later.",
+          title: t('contact.error'),
+          description: t('contact.error'),
           variant: "destructive",
         });
       });
@@ -122,33 +124,33 @@ const ContactForm = ({ trigger }: ContactFormProps) => {
       </DialogTrigger>
       <DialogContent className="sm:max-w-[500px]">
         <DialogHeader>
-          <DialogTitle>Book a Demo</DialogTitle>
+          <DialogTitle>{t('contact.title')}</DialogTitle>
           <DialogDescription>
-            Fill out the form below and we'll get back to you to schedule your personalized demo.
+            {t('contact.subtitle')}
           </DialogDescription>
         </DialogHeader>
         <form onSubmit={handleSubmit} className="space-y-4">
           <div className="grid grid-cols-2 gap-4">
             <div className="space-y-2">
-              <Label htmlFor="name">Name *</Label>
+              <Label htmlFor="name">{t('contact.name')} *</Label>
               <Input
                 id="name"
                 name="name"
                 value={formData.name}
                 onChange={handleInputChange}
-                placeholder="Your full name"
+                placeholder={t('contact.placeholders.name')}
                 required
               />
             </div>
             <div className="space-y-2">
-              <Label htmlFor="email">Email *</Label>
+              <Label htmlFor="email">{t('contact.email')} *</Label>
               <Input
                 id="email"
                 name="email"
                 type="email"
                 value={formData.email}
                 onChange={handleInputChange}
-                placeholder="your@email.com"
+                placeholder={t('contact.placeholders.email')}
                 required
               />
             </div>
@@ -156,36 +158,36 @@ const ContactForm = ({ trigger }: ContactFormProps) => {
           
           <div className="grid grid-cols-2 gap-4">
             <div className="space-y-2">
-              <Label htmlFor="company">Company</Label>
+              <Label htmlFor="company">{t('contact.company')}</Label>
               <Input
                 id="company"
                 name="company"
                 value={formData.company}
                 onChange={handleInputChange}
-                placeholder="Your company"
+                placeholder={t('contact.placeholders.company')}
               />
             </div>
             <div className="space-y-2">
-              <Label htmlFor="phone">Phone</Label>
+              <Label htmlFor="phone">{t('contact.phone')}</Label>
               <Input
                 id="phone"
                 name="phone"
                 type="tel"
                 value={formData.phone}
                 onChange={handleInputChange}
-                placeholder="Your phone number"
+                placeholder={t('contact.placeholders.phone')}
               />
             </div>
           </div>
 
           <div className="space-y-2">
-            <Label htmlFor="message">Message *</Label>
+            <Label htmlFor="message">{t('contact.message')} *</Label>
             <Textarea
               id="message"
               name="message"
               value={formData.message}
               onChange={handleInputChange}
-              placeholder="Tell us about your project or specific requirements..."
+              placeholder={t('contact.placeholders.message')}
               rows={4}
               required
             />
@@ -193,7 +195,7 @@ const ContactForm = ({ trigger }: ContactFormProps) => {
 
           {/* Captcha */}
           <div className="space-y-2">
-            <Label htmlFor="captcha">Security Check *</Label>
+            <Label htmlFor="captcha">{t('contact.captcha.label')} *</Label>
             <div className="flex items-center space-x-3">
               <div className="text-sm font-medium bg-muted px-3 py-2 rounded border">
                 {captcha.num1} + {captcha.num2} = ?
@@ -203,8 +205,8 @@ const ContactForm = ({ trigger }: ContactFormProps) => {
                 type="number"
                 value={captcha.answer}
                 onChange={handleCaptchaChange}
-                placeholder="Answer"
-                className="w-20"
+                placeholder={t('contact.placeholders.captcha')}
+                className="w-32"
                 required
               />
             </div>
@@ -216,10 +218,10 @@ const ContactForm = ({ trigger }: ContactFormProps) => {
               variant="outline"
               onClick={() => setIsOpen(false)}
             >
-              Cancel
+              {t('contact.buttons.cancel')}
             </Button>
             <Button type="submit">
-              Send
+              {t('contact.buttons.send')}
             </Button>
           </div>
         </form>

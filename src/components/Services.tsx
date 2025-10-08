@@ -1,9 +1,12 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Brain, Eye, Cpu, Cog, Code, BarChart3, Database, ShieldCheck } from "lucide-react";
 import { useTranslation } from "react-i18next";
+import { useIntersectionObserver } from "@/hooks/use-intersection-observer";
 
 const Services = () => {
   const { t } = useTranslation();
+  const { elementRef: titleRef, isIntersecting: titleVisible } = useIntersectionObserver();
+  const { elementRef: gridRef, isIntersecting: gridVisible } = useIntersectionObserver({ rootMargin: '0px 0px -50px 0px' });
   
   const services = [
     {
@@ -56,7 +59,14 @@ const Services = () => {
   return (
     <section id="services" className="py-20 bg-background">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
+        <div 
+          ref={titleRef}
+          className={`text-center mb-16 transition-all duration-1000 ${
+            titleVisible 
+              ? 'opacity-100 transform translate-y-0' 
+              : 'opacity-0 transform translate-y-8'
+          }`}
+        >
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
             {t('services.title')}
           </h2>
@@ -65,9 +75,19 @@ const Services = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div ref={gridRef} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => (
-            <Card key={index} className="group hover:shadow-elegant transition-all duration-300 hover:-translate-y-2 border-border">
+            <Card 
+              key={index} 
+              className={`group hover:shadow-elegant transition-all duration-500 hover:-translate-y-2 border-border ${
+                gridVisible 
+                  ? 'opacity-100 transform translate-y-0' 
+                  : 'opacity-0 transform translate-y-8'
+              }`}
+              style={{
+                transitionDelay: gridVisible ? `${index * 100}ms` : '0ms'
+              }}
+            >
               <CardHeader>
                 <div className="w-12 h-12 bg-gradient-primary rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
                   <service.icon className="w-6 h-6 text-white" />
